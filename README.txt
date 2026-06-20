@@ -1,12 +1,16 @@
-OW2ソルジャー構成診断 最適化公開版
+OW Coach 更新版 v8.2 full
 
-内容:
-- index.html のみで動作
-- 開発用CSV/JSON、更新検知ツール、内部レポートは削除済み
-- タグ数値、skill_threat、内部診断データは画面非表示
+正式URL:
+https://owcoach.jp/
 
-使い方:
-1. ZIPを解凍
-2. index.htmlをブラウザで開く
+反映内容:
+- 正式URLを https://owcoach.jp/ に統一
+- canonical / robots.txt / sitemap.xml を本番URLへ更新
+- SEO title / meta description / OGP / Twitter Card を更新
+- 構造化データ WebApplication を追加
+- Google Analytics GA4タグを追加: G-1B0GD9029Q
+- Clarityタグ: アップロード元に検出できませんでした。ClarityのProject IDが分かれば追加可能です。
 
-SEO公開準備済み: robots.txt / sitemap.xml / メタタグ / 構造化データ / 公開手順を追加。
+GitHub反映:
+このZIP内の index.html / robots.txt / sitemap.xml / README.txt をリポジトリ直下へ上書きしてください。
+Vercel連携済みならcommit後に自動デプロイされます。
