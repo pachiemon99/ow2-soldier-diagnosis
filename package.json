@@ -1,0 +1,16 @@
+{
+  "name": "owcoach-browser-qa",
+  "version": "49.41.0",
+  "private": true,
+  "description": "OW Coach static app with strengthened Playwright end-to-end browser regression QA.",
+  "scripts": {
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:report": "playwright show-report",
+    "check:syntax": "node --check playwright.config.js && node --check tests/static-server.cjs && node --check tests/owcoach-language.spec.js && node --check tests/owcoach-diagnosis.spec.js && node --check tests/owcoach-language-endurance.spec.js && node --check tests/owcoach-all-target-diagnosis.spec.js && node --check tests/owcoach-affinity-five-stage.spec.js && node --check tests/owcoach-enemy-unique.spec.js && node --check tests/owcoach-english-mobile-ui.spec.js && node --check tests/owcoach-all-hero-detail.spec.js && node --check tests/owcoach-policy-language-ui.spec.js && node --check tests/owcoach-broken-output-regression.spec.js && node --check tests/owcoach-localstorage-fallback.spec.js && node --check tests/owcoach-visual-snapshots.spec.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.0"
+  }
+}

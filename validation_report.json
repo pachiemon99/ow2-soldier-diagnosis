@@ -1,81 +1,14 @@
 {
-  "status": "ok",
-  "release": "owcoach_public_release_v14_beta_two_targets_public",
-  "base": "owcoach_public_release_v13_github_pages",
-  "public_files_count": 5,
-  "seo_and_scope": {
-    "title": "OW Coach | Overwatch 2 構成診断・対策ガイド",
-    "description": "OW CoachはOverwatch 2の構成診断・対策ガイドです。現在はベータ版で、診断対象はソルジャー76とソジョーンのみです。敵構成から立ち回り、優先対象、アルティメット使用条件を自動診断します。",
-    "og_title": "OW Coach | Overwatch 2 構成診断・対策ガイド",
-    "og_description": "ベータ版。現在の診断対象はソルジャー76とソジョーンのみ。敵構成から立ち回り、優先対象、アルティメット使用条件を診断します。",
-    "twitter_title_present": true,
-    "twitter_description_present": true,
-    "soldier_specific_search_title_removed": true,
-    "generic_search_title_present": true,
-    "beta_wording_present": true,
-    "two_supported_targets_wording_present": true,
-    "public_badge_present": true,
-    "stale_public_v13_badge_count": 0
-  },
-  "analytics_and_clarity": {
-    "ga_script_count": 1,
-    "ga_measurement_ids": [
-      "G-1B0GD9029Q"
-    ],
-    "gtag_config_ids": [
-      "G-1B0GD9029Q"
-    ],
-    "clarity_script_count": 1,
-    "clarity_project_ids": [
-      "x9udv4ffit"
-    ],
-    "ga_in_head": true,
-    "clarity_in_head": true
-  },
-  "app_validation": {
-    "js_syntax_ok": true,
-    "js_syntax_output": "",
-    "data_parse_ok": true,
-    "data_version": "owcoach_public_release_v14_beta_two_targets_public",
-    "implemented_targets": [
-      "Soldier76",
-      "Sojourn"
-    ],
-    "soldier_hero_count": 51,
-    "sojourn_detail_count": 51,
-    "no_lucio_speed_boost": true,
-    "no_highground_old_terms": true
-  },
-  "notes": [
-    "Source-level GA4 and Microsoft Clarity tag verification passed. Real-time hit reception must be checked after deployment from GA4 Realtime and Microsoft Clarity dashboard.",
-    "Google search result titles and snippets may take time to update after deployment and recrawling.",
-    "Canonical URL and sitemap use https://owcoach.jp/. Change them if deploying only to a github.io URL."
-  ],
-  "files": [
-    {
-      "name": "README.md",
-      "bytes": 1060,
-      "sha256": "ab06fd88c061ce5068a8e46e6882db958257df7b7c209b851e3bd82a1e6477cf"
-    },
-    {
-      "name": "index.html",
-      "bytes": 196311,
-      "sha256": "fe032a8b9a4105cf68f99e371f4d2ae410e1caa3f19755097ad2bef0c0c4a4b7"
-    },
-    {
-      "name": "robots.txt",
-      "bytes": 64,
-      "sha256": "4845d5e4799d71a5ea278efa6fe41e8d9982a3013419afe2f02f5979d6be6525"
-    },
-    {
-      "name": "sitemap.xml",
-      "bytes": 261,
-      "sha256": "544acd87390085f793c25192ca0775a1eaa4b95a293ce8fae844d5ea3ece03d5"
-    },
-    {
-      "name": "validation_report.json",
-      "bytes": 2255,
-      "sha256": "5a0b7158cb00400d2607acbb42db6e1d7ba4509c21f567141e72280d6b96ff82"
-    }
-  ]
+  "package_version": "49.41.0",
+  "test_file_count": 13,
+  "missing_expected_tests": [],
+  "workflow_present": true,
+  "workflow_uploads_playwright_report": true,
+  "workflow_uploads_test_results": true,
+  "workflow_uploads_visual_snapshots": true,
+  "syntax_check_ok": true,
+  "syntax_check_returncode": 0,
+  "legacy_affinity_hits_in_app_html": {},
+  "old_ng_hits_in_app_html": {},
+  "browser_runtime_note": "Not executed in this container because browser navigation may be blocked; intended for GitHub Actions/local Playwright."
 }
