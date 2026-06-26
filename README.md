@@ -1,4 +1,4 @@
-# OW Coach v49.41 E2E Regression Pack QA (public)
+# OW Coach v49.43 Public URL SEO QA (public)
 
 This package consolidates the v49.31-v49.40 Playwright browser QA additions into a ZIP-ready QA build.
 
@@ -124,3 +124,11 @@ npm run check:syntax
 - Sweeps all 51 hero detail pages in Japanese and English.
 - Checks that language round trips do not reintroduce old labels or broken placeholder output.
 
+
+
+## v49.43 Public URL SEO QA
+
+- Restored `robots.txt` and `sitemap.xml` at the package root.
+- Added `tests/owcoach-seo-files.spec.js` to verify both files exist, are served by the static server, and include all public OW Coach pages.
+- Default URL placeholder is `https://owcoach.jp`. Before public release, replace it in both `robots.txt` and `sitemap.xml` with the real GitHub Pages or custom domain URL.
+- Public pages listed in the sitemap: `/`, `/notices.html`, `/terms.html`, `/privacy.html`, `/tokusho.html`.
