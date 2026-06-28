@@ -1,55 +1,27 @@
 {
-  "version": "49.46.0",
-  "name": "v49.46 Policy Storage QA",
-  "kind": "public",
-  "based_on": "v49.45 npm registry fix",
-  "public_url": "https://owcoach.jp/",
-  "uploaded_github_actions_report_stats_before_fix": {
-    "total": 194,
-    "expected": 130,
-    "unexpected": 64,
-    "flaky": 0,
-    "skipped": 0,
-    "ok": false
-  },
-  "fixes_applied": [
-    "Removed cache:npm from GitHub Actions workflow to avoid lockfile cache failure.",
-    "Changed CI browser QA command to npm run test:e2e:ci with 2 workers and no retries.",
-    "Added split scripts: smoke, regression, visual.",
-    "Fixed affinity fixture setup to avoid selecting disabled duplicate Support/Damage options with locator.selectOption.",
-    "Exposed window.OWCOACH_SHARED_HEROES for all-51 hero detail metadata tests.",
-    "Fixed Soldier: 76 English target expectation in all-target diagnosis test.",
-    "Fixed detail-regression language roundtrip test to reopen hero detail after tab/render changes.",
-    "Added stable data-lang-choice attributes to first-visit language modal buttons on all HTML pages.",
-    "Reworked policy language tests to inspect visible .langBlock.active only, avoiding hidden-language false positives.",
-    "Changed SEO static asset tests to use request.get for robots.txt and sitemap.xml instead of page.goto downloads.",
-    "Reduced localStorage invalid flag cases to representative values for faster CI and less failure noise.",
-    "Adjusted select styling for dark mobile UI readability."
+  "version": "50.0.0",
+  "display_version": "v50",
+  "metadata_targets_17": true,
+  "added_targets": [
+    "Junkrat",
+    "Pharah",
+    "Echo",
+    "Emre"
   ],
-  "local_validation": {
-    "npm_run_check_syntax": "OK",
-    "playwright_test_list": "OK: 186 tests in 13 files",
-    "static_zip_content_checks": "OK",
-    "actual_browser_execution_in_this_container": "NOT_RUN: Playwright browser executable was unavailable; browser download failed with DNS EAI_AGAIN in this environment. Verify on GitHub Actions."
-  },
-  "github_actions": {
-    "workflow_file": ".github/workflows/playwright.yml",
-    "run_command": "npm run test:e2e:ci",
-    "artifacts": [
-      "playwright-report",
-      "test-results",
-      "visual-snapshots"
-    ]
-  },
-  "phase": "npm_registry_fix",
-  "package_lock_included": false,
-  "npmrc_public_registry": true,
-  "workflow_removes_lockfiles_before_install": true,
-  "workflow_install_command": "npm install --no-package-lock --registry=https://registry.npmjs.org/",
-  "internal_registry_residual": false,
-  "fixes": [
-    "privacy policy active block assertion",
-    "localStorage repair test persistent addInitScript reload issue"
-  ],
-  "expected_previous_failures_fixed": 8
+  "synergy_cross_qa": true,
+  "synergy_browser_matrix_qa": true,
+  "synergy_priority_qa": true,
+  "target_synergy_role_lines": true,
+  "english_synergy_render": true,
+  "added_target_detail_alignment": true,
+  "v4954_static_preflight": true,
+  "no_forbidden_static_terms": true,
+  "npm_run_check_syntax": "passed_local",
+  "npm_run_check_preflight": "passed_local",
+  "browser_playwright": "pending_github_actions",
+  "browser_qa_modal_bypass_fix": true,
+  "added_target_selectors_fix": true,
+  "added_target_detail_tab_fix": true,
+  "target_count": 17,
+  "static_server_module_export_fix": true
 }

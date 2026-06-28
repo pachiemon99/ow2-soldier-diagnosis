@@ -131,7 +131,7 @@ test.describe('five-stage affinity guardrails', () => {
     test(`${lang}: every target and varied enemy fixture displays only five-stage affinity`, async ({ page }) => {
       await openWithLanguage(page, lang);
       const targetIds = await page.locator('#targetHero option').evaluateAll((options) => options.map((o) => o.value).filter(Boolean));
-      expect(targetIds.length).toBe(10);
+      expect(targetIds.length).toBe(13);
       const fixtures = await enemyFixtures(page);
       expect(fixtures.length).toBe(3);
 
