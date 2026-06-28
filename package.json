@@ -1,19 +1,15 @@
 {
   "name": "owcoach-browser-qa",
-  "version": "49.46.0",
+  "version": "49.53.17",
   "private": true,
-  "description": "OW Coach static app with stable Playwright browser QA, privacy policy language fixture fix, localStorage reload repair, and public SEO files.",
+  "description": "OW Coach v49.53.17 synergy composition diagnosis stabilization build.",
   "scripts": {
     "test:e2e": "playwright test",
-    "test:e2e:headed": "playwright test --headed",
-    "test:e2e:ui": "playwright test --ui",
-    "test:e2e:report": "playwright show-report",
-    "check:syntax": "node --check playwright.config.js && node --check tests/static-server.cjs && node --check tests/owcoach-language.spec.js && node --check tests/owcoach-diagnosis.spec.js && node --check tests/owcoach-language-endurance.spec.js && node --check tests/owcoach-all-target-diagnosis.spec.js && node --check tests/owcoach-affinity-five-stage.spec.js && node --check tests/owcoach-enemy-unique.spec.js && node --check tests/owcoach-english-mobile-ui.spec.js && node --check tests/owcoach-all-hero-detail.spec.js && node --check tests/owcoach-policy-language-ui.spec.js && node --check tests/owcoach-broken-output-regression.spec.js && node --check tests/owcoach-localstorage-fallback.spec.js && node --check tests/owcoach-visual-snapshots.spec.js && node --check tests/owcoach-seo-files.spec.js",
-    "test:e2e:ci": "playwright test --workers=2 --retries=0",
-    "test:e2e:smoke": "playwright test tests/owcoach-language.spec.js tests/owcoach-diagnosis.spec.js tests/owcoach-seo-files.spec.js",
-    "test:e2e:regression": "playwright test tests/owcoach-language-endurance.spec.js tests/owcoach-all-target-diagnosis.spec.js tests/owcoach-affinity-five-stage.spec.js tests/owcoach-enemy-unique.spec.js tests/owcoach-all-hero-detail.spec.js tests/owcoach-policy-language-ui.spec.js tests/owcoach-broken-output-regression.spec.js tests/owcoach-localstorage-fallback.spec.js",
-    "test:e2e:visual": "playwright test tests/owcoach-english-mobile-ui.spec.js tests/owcoach-visual-snapshots.spec.js",
-    "test:e2e:policy-storage": "playwright test tests/owcoach-policy-language-ui.spec.js tests/owcoach-localstorage-fallback.spec.js --workers=2 --retries=0"
+    "test:e2e:ci": "playwright test tests/owcoach-synergy-cross-qa.spec.js tests/owcoach-synergy-browser-matrix.spec.js tests/owcoach-synergy-priority.spec.js tests/owcoach-target-synergy-role-lines.spec.js tests/owcoach-english-synergy-render.spec.js tests/owcoach-added-target-detail-alignment.spec.js --workers=2 --retries=0",
+    "test:e2e:smoke": "playwright test tests/owcoach-synergy-cross-qa.spec.js tests/owcoach-synergy-priority.spec.js",
+    "test:e2e:regression": "playwright test tests/owcoach-synergy-browser-matrix.spec.js tests/owcoach-target-synergy-role-lines.spec.js tests/owcoach-english-synergy-render.spec.js tests/owcoach-added-target-detail-alignment.spec.js",
+    "check:preflight": "node tests/owcoach-v4954-static-preflight.cjs",
+    "check:syntax": "node --check playwright.config.js && node --check tests/static-server.cjs && node --check tests/owcoach-synergy-cross-qa.spec.js && node --check tests/owcoach-synergy-browser-matrix.spec.js && node --check tests/owcoach-synergy-priority.spec.js && node --check tests/owcoach-target-synergy-role-lines.spec.js && node --check tests/owcoach-english-synergy-render.spec.js && node --check tests/owcoach-added-target-detail-alignment.spec.js && node --check tests/owcoach-v4954-static-preflight.cjs && npm run check:preflight"
   },
   "devDependencies": {
     "@playwright/test": "^1.54.0"
