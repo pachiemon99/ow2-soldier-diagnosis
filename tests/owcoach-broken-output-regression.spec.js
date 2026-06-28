@@ -131,7 +131,7 @@ test.describe('broken output and legacy wording regression', () => {
     test(`${lang}: every target composition diagnosis avoids broken output and old labels`, async ({ page }) => {
       await openWithLanguage(page, '/', lang);
       const ids = await getTargetIds(page);
-      expect(ids.length).toBe(10);
+      expect(ids.length).toBe(13);
       for (const heroId of ids) {
         await runCompositionDiagnosis(page, heroId, lang);
       }

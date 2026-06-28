@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 
 const DAMAGE_IDS = ['dps1', 'dps2'];
 const SUPPORT_IDS = ['sup1', 'sup2'];
-const TARGET_SEQUENCE = ['Soldier76', 'Sojourn', 'Cassidy', 'Ashe', 'Reaper', 'Symmetra', 'Hanzo', 'Torbjorn', 'Tracer', 'Genji'];
+const TARGET_SEQUENCE = ['Soldier76', 'Sojourn', 'Cassidy', 'Ashe', 'Reaper', 'Symmetra', 'Hanzo', 'Torbjorn', 'Bastion', 'Mei', 'Sombra', 'Tracer', 'Genji'];
 
 async function openWithLanguage(page, lang = 'ja') {
   await page.addInitScript((selectedLang) => {

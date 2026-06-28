@@ -113,7 +113,7 @@ test('English KPI cards stay short and Game Plan summary does not become long pr
 test('English compact KPI layout holds across all target heroes', async ({ page }) => {
   await openWithLanguage(page, 'en');
   const targetIds = await page.locator('#targetHero option').evaluateAll((options) => options.map((option) => option.value).filter(Boolean));
-  expect(targetIds.length).toBe(10);
+  expect(targetIds.length).toBe(13);
 
   const viewport = await viewportSnapshot(page);
   const maxHeight = viewport.width <= 520 ? 82 : 98;

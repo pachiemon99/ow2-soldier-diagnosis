@@ -15,6 +15,9 @@ const EXPECTED_TARGET_LABELS = {
     Symmetra: 'シンメトラ',
     Hanzo: 'ハンゾー',
     Torbjorn: 'トールビョーン',
+    Bastion: 'バスティオン',
+    Mei: 'メイ',
+    Sombra: 'ソンブラ',
     Tracer: 'トレーサー',
     Genji: 'ゲンジ'
   },
@@ -27,6 +30,9 @@ const EXPECTED_TARGET_LABELS = {
     Symmetra: 'Symmetra',
     Hanzo: 'Hanzo',
     Torbjorn: 'Torbjörn',
+    Bastion: 'Bastion',
+    Mei: 'Mei',
+    Sombra: 'Sombra',
     Tracer: 'Tracer',
     Genji: 'Genji'
   }
@@ -123,7 +129,7 @@ test.describe('all target composition diagnosis regression', () => {
   test('target changes recalculate affinity instead of leaving stale result text', async ({ page }) => {
     await openWithLanguage(page, 'en');
     const ids = await getTargetIds(page);
-    expect(ids.length).toBe(10);
+    expect(ids.length).toBe(13);
 
     let previousHeader = '';
     for (const heroId of ids) {

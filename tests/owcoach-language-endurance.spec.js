@@ -1,8 +1,8 @@
 const { test, expect } = require('@playwright/test');
 
 const JAPANESE_RE = /[ぁ-んァ-ン一-龥]/;
-const ENGLISH_ONLY_TARGET_NAMES = ['Soldier: 76', 'Sojourn', 'Cassidy', 'Ashe', 'Reaper', 'Symmetra', 'Hanzo', 'Torbjörn', 'Tracer', 'Genji'];
-const JAPANESE_TARGET_NAMES = ['ソルジャー76', 'ソジョーン', 'キャスディ', 'アッシュ', 'リーパー', 'シンメトラ', 'ハンゾー', 'トールビョーン', 'トレーサー', 'ゲンジ'];
+const ENGLISH_ONLY_TARGET_NAMES = ['Soldier: 76', 'Sojourn', 'Cassidy', 'Ashe', 'Reaper', 'Symmetra', 'Hanzo', 'Torbjörn', 'Bastion', 'Mei', 'Sombra', 'Tracer', 'Genji'];
+const JAPANESE_TARGET_NAMES = ['ソルジャー76', 'ソジョーン', 'キャスディ', 'アッシュ', 'リーパー', 'シンメトラ', 'ハンゾー', 'トールビョーン', 'バスティオン', 'メイ', 'ソンブラ', 'トレーサー', 'ゲンジ'];
 const LEGACY_MIXED_WORDS = ['Japanese', '有利寄り', '五分寄り', '不利寄り', 'かなり注意', 'かなり厳しい', 'Even-ish', 'High Risk', 'Caution'];
 
 async function openWithLanguage(page, lang) {

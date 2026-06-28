@@ -81,7 +81,7 @@ test('initial enemy damage/support slots are unique and duplicate attempts auto-
 test('all diagnosable heroes render composition diagnosis with five-stage affinity in Japanese and English', async ({ page }) => {
   await openWithLanguage(page, 'ja');
   const ids = await targetIds(page);
-  expect(ids.length).toBe(10);
+  expect(ids.length).toBe(13);
 
   for (const lang of ['ja', 'en']) {
     if (lang === 'en') await chooseFromFlagMenu(page, 'en');

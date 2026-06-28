@@ -4,7 +4,7 @@ const path = require('path');
 
 const TARGET_SNAPSHOT_IDS = [
   'Soldier76', 'Sojourn', 'Cassidy', 'Ashe', 'Reaper',
-  'Symmetra', 'Hanzo', 'Torbjorn', 'Tracer', 'Genji'
+  'Symmetra', 'Hanzo', 'Torbjorn', 'Bastion', 'Mei', 'Sombra', 'Tracer', 'Genji'
 ];
 
 function safeName(name) {
@@ -170,7 +170,7 @@ test.describe('visual snapshot artifacts for UI regression review', () => {
       await chooseFromFlagMenu(page, 'ja');
       await expect(page.locator('#flagLangBtn')).toHaveText('🇯🇵');
       await expectLanguageOptionsSelfNamed(page);
-      await saveSnapshot(page, testInfo, `11-policy-${policy.name}-japanese`);
+      await saveSnapshot(page, testInfo, `13-policy-${policy.name}-japanese`);
     });
   }
 });
