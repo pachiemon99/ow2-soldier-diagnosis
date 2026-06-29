@@ -3,7 +3,7 @@ const { test, expect } = require('@playwright/test');
 const APP_PAGES = ['/', '/notices.html', '/terms.html', '/privacy.html', '/tokusho.html'];
 const BROKEN_VISIBLE_WORDS = ['undefined', 'null', '[object Object]', 'NaN'];
 const OLD_BAD_WORDS = [
-  'ストルワート', 'Hard No', 'ja_to_en_verified', '横道', '触る', '遮蔽へ切る', '同じ入口',
+  'ストルワート', 'Hard No', 'ja_to_en_verified', '横道', '触る', '遮蔽へ切る', '同じダイブ経路',
   '有利寄り', '五分寄り', '不利寄り', 'かなり注意', 'かなり厳しい',
   'Even-ish', 'High Risk', 'Caution'
 ];
@@ -57,7 +57,7 @@ async function expectNoBadVisibleText(page, contextLabel = 'page') {
 async function expectNoBadSourceTerms(page) {
   const sourceReport = await page.evaluate(async (paths) => {
     const terms = [
-      'ストルワート', 'Hard No', 'ja_to_en_verified', '横道', '触る', '遮蔽へ切る', '同じ入口',
+      'ストルワート', 'Hard No', 'ja_to_en_verified', '横道', '触る', '遮蔽へ切る', '同じダイブ経路',
       '有利寄り', '五分寄り', '不利寄り', 'かなり注意', 'かなり厳しい',
       'Even-ish', 'High Risk', 'Caution', 'normalizeCompAffinity'
     ];

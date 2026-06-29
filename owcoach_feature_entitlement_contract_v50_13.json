@@ -89,7 +89,7 @@
     "skill_wait_windows": {
       "tier": "paid",
       "label": "有料",
-      "description": "敵スキル待ち、確定窓、1試合中のチェック。"
+      "description": "敵スキル待ち、倒し切りを狙う条件、1試合中のチェック。"
     },
     "ultimate_decision": {
       "tier": "paid",

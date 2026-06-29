@@ -1,0 +1,9 @@
+{
+  "fallback_label": "バランス構成",
+  "list_limit_default": 3,
+  "generic_order_fallback": [
+    "1. 起点確認：{firstNames}。最初に体力差を作る対象を決める。",
+    "2. 支援確認：{secondNames}。回復・救助の射線を動かす。",
+    "3. 追撃確認：逃げ遅れた敵だけ退路を残して追う。"
+  ]
+}

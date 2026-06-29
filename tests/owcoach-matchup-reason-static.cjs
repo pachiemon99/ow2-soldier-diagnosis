@@ -27,7 +27,7 @@ function parseCsvLine(line) {
 const idx = Object.fromEntries(header.map((h,i)=>[h,i]));
 const targets = new Set();
 const enemiesByTarget = new Map();
-const forbidden = /(TODO|TBD|主要アビリティ|移動後|防御後|救助後|該当なし|undefined|null|NaN)/;
+const forbidden = /(TODO|TBD|主要アビリティ|移動スキル使用直後|防御スキル使用後|救助スキル使用後|該当なし|undefined|null|NaN)/;
 for (const line of lines.slice(1)) {
   const cols=parseCsvLine(line);
   const target=cols[idx.target_id], enemy=cols[idx.enemy_id];

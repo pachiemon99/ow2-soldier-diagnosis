@@ -1,0 +1,47 @@
+{
+  "groups": [
+    {
+      "targets": [
+        "Junkrat"
+      ],
+      "template": "自分の役割：{targetJa}は{firstNames}のダイブ経路・曲がり角・退路へ{primary}を撃ち込み、{sustain}で{secondNames}の合流先をふさぐ。"
+    },
+    {
+      "targets": [
+        "Pharah"
+      ],
+      "template": "自分の役割：{targetJa}は屋根・壁・建物の縁から1回のピークでロケットを撃ち、{firstNames}の足元・遮蔽裏・着地先に爆発ダメージを置く。"
+    },
+    {
+      "targets": [
+        "Echo"
+      ],
+      "template": "自分の役割：{targetJa}は{burst}命中後だけ{firstNames}へ{primary}とフォーカス・ビームを重ね、{mobility}で長く追わない。"
+    },
+    {
+      "targets": [
+        "Emre"
+      ],
+      "template": "自分の役割：{targetJa}は1〜2バーストで遮蔽へ戻り、{burst}で{firstNames}の足元・遮蔽横・退路を崩す。"
+    },
+    {
+      "targets": [
+        "Genji",
+        "Tracer",
+        "Sombra",
+        "Reaper"
+      ],
+      "template": "自分の役割：{targetJa}は単独で深く追わず、{firstNames}の移動スキル使用直後・救助スキル使用後・孤立後だけ{primary}で追撃する。"
+    },
+    {
+      "targets": [
+        "Symmetra",
+        "Torbjorn",
+        "Mei",
+        "Bastion"
+      ],
+      "template": "自分の役割：{targetJa}は正面だけで撃たず、設置物・壁・形態変更で{firstNames}のダイブ経路と{secondNames}の支援射線を制限する。"
+    }
+  ],
+  "default": "自分の役割：{targetJa}は中距離の遮蔽から1回のピークで撃ち、{burst}は{firstNames}、{secondNames}、逃げる敵へ合わせる。"
+}

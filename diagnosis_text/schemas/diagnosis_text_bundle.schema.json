@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OW Coach Diagnosis Text Bundle",
+  "type": "object",
+  "required": [
+    "version",
+    "composition_profiles",
+    "composition_win_conditions",
+    "target_role_templates",
+    "section_titles",
+    "output_rules"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "composition_profiles": {
+      "type": "object"
+    },
+    "composition_win_conditions": {
+      "type": "object"
+    },
+    "target_role_templates": {
+      "type": "object"
+    },
+    "section_titles": {
+      "type": "object"
+    },
+    "output_rules": {
+      "type": "object"
+    },
+    "rewrite_rules": {
+      "type": "object"
+    }
+  }
+}

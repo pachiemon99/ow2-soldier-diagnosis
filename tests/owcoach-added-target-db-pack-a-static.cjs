@@ -6,7 +6,7 @@ const match = html.match(/const OWCOACH_DATA = (.*?);\n/);
 if (!match) throw new Error('OWCOACH_DATA not found');
 const data = JSON.parse(match[1]);
 const targets = ['Junkrat', 'Pharah', 'Echo', 'Emre'];
-const placeholders = ['主要アビリティ', '移動後', '防御後', '救助後', '防御・救助・移動スキル'];
+const placeholders = ['主要アビリティ', '移動スキル使用直後', '防御スキル使用後', '救助スキル使用後', '防御・救助・移動スキル'];
 const rankKeys = ['bronze', 'silver', 'gold', 'platinum', 'diamond_plus'];
 for (const target of targets) {
   const t = data.targets[target];

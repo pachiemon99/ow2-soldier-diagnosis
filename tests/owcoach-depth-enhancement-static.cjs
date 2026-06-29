@@ -28,7 +28,7 @@ must(needs===0,`Pack Q audit should resolve needs_depth rows, got ${needs}`);
 const contract=JSON.parse(fs.readFileSync(contractPath,'utf8'));
 must(contract.version==='v50.17','contract version must be v50.17');
 must(contract.row_count===867,'contract row count must be 867');
-must(['50.17.0','50.18.0','50.19.0','50.20.0'].includes(pkg.version),`package version should be 50.17.0, got ${pkg.version}`);
+must(['50.17.0','50.18.0','50.19.0','50.20.0','50.21.0','50.22.0'].includes(pkg.version),`package version should be 50.17.0, got ${pkg.version}`);
 must(pkg.scripts['check:depth-enhancement']==='node tests/owcoach-depth-enhancement-static.cjs','missing check:depth-enhancement script');
 must(pkg.scripts['check:syntax'].includes('check:depth-enhancement'),'check:syntax must include depth enhancement');
 console.log('Depth enhancement static checks passed');

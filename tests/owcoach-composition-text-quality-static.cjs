@@ -21,7 +21,7 @@ for (const marker of [
   '高台判断',
   'ピーク判断',
   'アルティメット判断',
-  '禁止行動'
+  '絶対にやってはいけないこと'
 ]) mustContain(marker);
 for (const label of ['ダイブ救助構成','長射線＋空中圧力構成','分断射線構成','ラッシュ継戦構成','高耐久継戦構成','救助継戦構成','バランス構成']) mustContain(`'${label}'`, `profile ${label}`);
 mustContain('owcSynergyOpeningLines(sel,commonComp)', 'diagnose opening injection');

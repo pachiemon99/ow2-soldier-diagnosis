@@ -25,7 +25,7 @@ must(dCount===0 && eCount===0,'remediation audit must not contain D/E rows');
 must(cCount===0,'Pack P should resolve all C-band rows from Pack O');
 ['OWC_QUALITY_REMEDIATION_DB','owcQualityRemediationScore','owcQualityRemediationSummary','owcQualityRemediationEditorNote','v50.16 Pack P'].forEach(t=>must(index.includes(t),`missing runtime token ${t}`));
 const marker='const OWCOACH_DATA = '; const start=index.indexOf(marker)+marker.length; const end=index.indexOf('\n\nconst CANONICAL_TARGET_IDS', start); const embedded=index.slice(start,end); ['移動後','防御後','救助後','主要アビリティ','該当なし'].forEach(t=>must(!embedded.includes(t),`placeholder still present in embedded data: ${t}`));
-must(['50.16.0','50.17.0','50.18.0','50.19.0','50.20.0'].includes(pkg.version),`package version should be 50.16.0, got ${pkg.version}`);
+must(['50.16.0','50.17.0','50.18.0','50.19.0','50.20.0','50.21.0','50.22.0'].includes(pkg.version),`package version should be 50.16.0, got ${pkg.version}`);
 must(pkg.scripts['check:quality-remediation']==='node tests/owcoach-quality-remediation-static.cjs','missing check:quality-remediation script');
 must(pkg.scripts['check:syntax'].includes('check:quality-remediation'),'check:syntax must include quality remediation');
 console.log('Quality remediation static checks passed');

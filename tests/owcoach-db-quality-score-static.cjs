@@ -29,7 +29,7 @@ must(contract.version==='v50.15','contract version must be v50.15');
 must(contract.row_count===867,'contract row count must be 867');
 must((contract.runtime_helpers||[]).includes('owcDbQualityEditorNote'),'contract missing runtime helper');
 ['v50.15 Pack O: DB quality score audit','OWC_DB_QUALITY_SCORE_DB','owcDbQualityScore','owcDbQualitySummary','owcDbQualityEditorNote'].forEach(token=>must(index.includes(token),`missing runtime token ${token}`));
-must(['50.15.0','50.16.0','50.17.0','50.18.0','50.19.0','50.20.0'].includes(pkg.version),`package version should be 50.15.0 or 50.16.0, got ${pkg.version}`);
+must(['50.15.0','50.16.0','50.17.0','50.18.0','50.19.0','50.20.0','50.21.0','50.22.0'].includes(pkg.version),`package version should be 50.15.0 or 50.16.0, got ${pkg.version}`);
 must(pkg.scripts['check:db-quality-score']==='node tests/owcoach-db-quality-score-static.cjs','missing check:db-quality-score script');
 must(pkg.scripts['check:syntax'].includes('check:db-quality-score'),'check:syntax must include DB quality check');
 console.log('DB quality score static checks passed');

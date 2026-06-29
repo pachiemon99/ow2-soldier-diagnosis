@@ -32,7 +32,7 @@ const POLICY_PAGES = [
 ];
 
 const BROKEN_OUTPUT_WORDS = ['undefined', 'null', '[object Object]'];
-const OLD_BAD_WORDS = ['ストルワート', 'Hard No', 'ja_to_en_verified', '横道', '遮蔽へ切る', '同じ入口'];
+const OLD_BAD_WORDS = ['ストルワート', 'Hard No', 'ja_to_en_verified', '横道', '遮蔽へ切る', '同じダイブ経路'];
 
 async function openFreshPolicy(page, path) {
   await page.addInitScript(() => localStorage.clear());
