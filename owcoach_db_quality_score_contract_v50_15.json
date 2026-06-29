@@ -1,0 +1,123 @@
+{
+  "version": "v50.15",
+  "pack": "Pack O: DB Quality Score Audit",
+  "purpose": "Create a unified quality scoring layer for all implemented target/enemy diagnostic data before further content expansion.",
+  "row_count": 867,
+  "target_count": 17,
+  "enemy_count_per_target": 51,
+  "required_columns": [
+    "target_id",
+    "target_ja",
+    "enemy_id",
+    "enemy_ja",
+    "enemy_role",
+    "enemy_sub_role",
+    "coverage_score",
+    "text_score",
+    "rating_score",
+    "uniqueness_score",
+    "total_quality_score",
+    "quality_band",
+    "issue_count",
+    "missing_sources",
+    "placeholder_terms",
+    "short_text_fields",
+    "duplicate_warning",
+    "rating_range_for_target",
+    "source_count",
+    "one_line_summary",
+    "next_edit_priority",
+    "review_status",
+    "quality_version"
+  ],
+  "summary_columns": [
+    "target_id",
+    "target_ja",
+    "average_quality_score",
+    "min_quality_score",
+    "max_quality_score",
+    "a_count",
+    "b_count",
+    "c_count",
+    "d_count",
+    "e_count",
+    "needs_source_fix",
+    "needs_text_cleanup",
+    "needs_depth",
+    "needs_uniqueness",
+    "watch",
+    "stable",
+    "quality_version"
+  ],
+  "quality_policy": {
+    "score_formula": "coverage 35%, text 25%, rating 20%, uniqueness 20%",
+    "bands": {
+      "A": "92-100",
+      "B": "82-91",
+      "C": "70-81",
+      "D": "55-69",
+      "E": "0-54"
+    },
+    "structural_sources": [
+      "comp_db",
+      "detail_db",
+      "ultimate_decision",
+      "skill_wait_windows",
+      "priority_targets",
+      "rank_advice",
+      "matchup_reason",
+      "text_uniqueness",
+      "matchup_category",
+      "feature_entitlement"
+    ],
+    "placeholder_terms": [
+      "主要アビリティ",
+      "移動後",
+      "防御後",
+      "救助後",
+      "該当なし",
+      "undefined",
+      "null",
+      "NaN",
+      "TODO",
+      "仮文言",
+      "placeholder",
+      "TBD"
+    ],
+    "required_detail_fields": [
+      "gameplan",
+      "main",
+      "move",
+      "sustain",
+      "ultimate",
+      "cue",
+      "practice"
+    ],
+    "required_rank_fields": [
+      "bronze",
+      "silver",
+      "gold",
+      "platinum",
+      "diamond_plus"
+    ],
+    "failure_policy": "Static QA fails on missing files, invalid row count, invalid score range, missing runtime helpers, or missing package script. Content quality issues are reported as rows, not hard failures."
+  },
+  "runtime_helpers": [
+    "owcDbQualityScore",
+    "owcDbQualitySummary",
+    "owcDbQualityEditorNote"
+  ],
+  "hard_fail_conditions": [
+    "missing audit CSV",
+    "row count not 867",
+    "score outside 0-100",
+    "missing package script",
+    "missing runtime helper tokens"
+  ],
+  "soft_issue_categories": [
+    "missing_sources",
+    "placeholder_terms",
+    "short_text_fields",
+    "duplicate_warning"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "version": "v50.10 Pack J",
+  "name": "matchup_reason_clarity",
+  "required_targets": [
+    "Soldier76",
+    "Sojourn",
+    "Cassidy",
+    "Ashe",
+    "Reaper",
+    "Symmetra",
+    "Hanzo",
+    "Torbjorn",
+    "Bastion",
+    "Mei",
+    "Sombra",
+    "Tracer",
+    "Genji",
+    "Junkrat",
+    "Pharah",
+    "Echo",
+    "Emre"
+  ],
+  "required_enemy_count": 51,
+  "required_rows": 867,
+  "required_columns": [
+    "target_id",
+    "target_ja",
+    "enemy_id",
+    "enemy_ja",
+    "enemy_role",
+    "enemy_sub_role",
+    "matchup_rating",
+    "verdict",
+    "advantage_reason",
+    "disadvantage_reason",
+    "win_condition",
+    "loss_condition",
+    "play_priority",
+    "confidence"
+  ],
+  "display_sections": [
+    "構成診断: 相性理由",
+    "詳細診断: 有利 / 不利理由"
+  ],
+  "rules": [
+    "All implemented target heroes must have one row for each shared enemy hero.",
+    "matchup_rating must be 0-10 and verdict must be derived from the rating.",
+    "Each row must explain advantage_reason, disadvantage_reason, win_condition, and loss_condition.",
+    "The UI must not show only a numeric matchup score without a reason block."
+  ]
+}

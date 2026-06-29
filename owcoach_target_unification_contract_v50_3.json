@@ -1,0 +1,49 @@
+{
+  "version": "v50_3_target_unification",
+  "canonical_target_ids": [
+    "Soldier76",
+    "Sojourn",
+    "Cassidy",
+    "Ashe",
+    "Reaper",
+    "Symmetra",
+    "Hanzo",
+    "Torbjorn",
+    "Bastion",
+    "Mei",
+    "Sombra",
+    "Tracer",
+    "Genji",
+    "Junkrat",
+    "Pharah",
+    "Echo",
+    "Emre"
+  ],
+  "canonical_source": "OWCOACH_DATA.targets[targetId]",
+  "csv_policy": "CSV files are mirrors for audit/manual editing. Embedded OWCOACH_DATA remains the runtime source of truth.",
+  "required_meta_fields": [
+    "hero_id",
+    "target_id",
+    "hero_ja",
+    "target_ja",
+    "role",
+    "status",
+    "data_source",
+    "canonical_source",
+    "engine_id",
+    "engine_family",
+    "csv_comp_file",
+    "csv_detail_file",
+    "comp_db_count",
+    "detail_db_count",
+    "normalization_contract"
+  ],
+  "required_engine_fields": [
+    "id",
+    "family",
+    "version",
+    "canonical_registry_key"
+  ],
+  "rank_advice_mode": "five_tiers",
+  "legacy_policy": "DATA.<slug>_comp_db and DATA.<slug>_hero_db are compatibility aliases generated from CANONICAL_TARGET_IDS."
+}

@@ -1,0 +1,34 @@
+{
+  "version": "v50.17",
+  "pack": "Pack Q: Depth Enhancement",
+  "row_count": 867,
+  "purpose": "Resolve needs_depth findings by adding per-target/per-enemy first check, commit window, reset rule, practice question, and duplication guardrail.",
+  "required_columns": [
+    "target_id",
+    "enemy_id",
+    "depth_archetype",
+    "first_check",
+    "commit_window",
+    "reset_rule",
+    "practice_question",
+    "depth_summary",
+    "duplication_guardrail"
+  ],
+  "min_text_lengths": {
+    "first_check": 35,
+    "commit_window": 35,
+    "reset_rule": 35,
+    "practice_question": 25,
+    "duplication_guardrail": 60
+  },
+  "runtime_helpers": [
+    "owcDepthEnhancement",
+    "owcDepthEnhancementLines",
+    "owcDepthEnhancementHtml"
+  ],
+  "display_surfaces": [
+    "detail diagnosis Japanese",
+    "detail diagnosis English parity",
+    "editor quality audit"
+  ]
+}

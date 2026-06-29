@@ -1,0 +1,32 @@
+{
+  "version": "v50.5.0",
+  "pack": "E",
+  "name": "composition_text_quality",
+  "required_functions": [
+    "owcCompositionTextProfile",
+    "owcSynergyOpeningLines",
+    "owcSynergyOrderLines",
+    "owcSynergyHighgroundLines",
+    "owcSynergyPeakLines",
+    "owcSynergyUltimateLines",
+    "owcSynergyForbiddenLines"
+  ],
+  "required_sections": [
+    "opening",
+    "order",
+    "highground",
+    "peak",
+    "ultimate",
+    "forbidden"
+  ],
+  "labels": [
+    "ダイブ救助構成",
+    "長射線＋空中圧力構成",
+    "分断射線構成",
+    "ラッシュ継戦構成",
+    "高耐久継戦構成",
+    "救助継戦構成",
+    "バランス構成"
+  ],
+  "compatibility": "Pack D labels and QA expectations are preserved; text generation is upgraded."
+}

@@ -1,0 +1,29 @@
+{
+  "contract": "diagnosis_result_ux_v50_19",
+  "version": "50.19.0",
+  "required_renderers": [
+    "owcRenderCompositionUxJa",
+    "owcRenderDetailUxJa",
+    "renderEnglishComposition",
+    "renderEnglishDetail"
+  ],
+  "required_markers_ja": [
+    "今回の最重要ポイント",
+    "初心者向け要約"
+  ],
+  "required_markers_en": [
+    "Top 3 Priorities",
+    "Beginner Summary"
+  ],
+  "section_order": [
+    "top_three",
+    "core",
+    "order",
+    "timing",
+    "ultimate",
+    "review",
+    "rank",
+    "avoid"
+  ],
+  "notes": "Pack S restructures presentation only; Pack A-R data contracts remain intact."
+}

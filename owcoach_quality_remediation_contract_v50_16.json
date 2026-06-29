@@ -1,0 +1,37 @@
+{
+  "version": "v50.16",
+  "pack": "Pack P: Quality Remediation",
+  "purpose": "Apply the first remediation pass after Pack O by adding canonical detail fields to all target/enemy rows and removing abstract placeholder timing words.",
+  "target_count": 17,
+  "enemy_count_per_target": 51,
+  "row_count": 867,
+  "remediation_actions": [
+    "canonical_detail_fields",
+    "csv_mirror_columns",
+    "timing_word_cleanup",
+    "post_remediation_quality_audit"
+  ],
+  "canonical_detail_fields": [
+    "main",
+    "move",
+    "sustain",
+    "ultimate",
+    "cue",
+    "practice",
+    "targets",
+    "forbidden",
+    "rank"
+  ],
+  "post_quality_band_counts": {
+    "A": 357,
+    "B": 510,
+    "C": 0,
+    "D": 0,
+    "E": 0
+  },
+  "runtime_helpers": [
+    "owcQualityRemediationScore",
+    "owcQualityRemediationSummary",
+    "owcQualityRemediationEditorNote"
+  ]
+}

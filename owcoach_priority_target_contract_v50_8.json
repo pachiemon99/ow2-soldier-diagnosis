@@ -1,0 +1,60 @@
+{
+  "version": "v50.8.0",
+  "pack": "Pack H - Priority Target Decision DB",
+  "targets": [
+    "Soldier76",
+    "Sojourn",
+    "Cassidy",
+    "Ashe",
+    "Reaper",
+    "Symmetra",
+    "Hanzo",
+    "Torbjorn",
+    "Bastion",
+    "Mei",
+    "Sombra",
+    "Tracer",
+    "Genji",
+    "Junkrat",
+    "Pharah",
+    "Echo",
+    "Emre"
+  ],
+  "enemy_count": 51,
+  "csv_rows_expected": 867,
+  "required_profile_fields": [
+    "ja",
+    "style",
+    "primary",
+    "pressure",
+    "avoid",
+    "finish"
+  ],
+  "required_csv_fields": [
+    "target_id",
+    "target_ja",
+    "enemy_id",
+    "enemy_ja",
+    "enemy_role",
+    "priority_class",
+    "priority_score",
+    "first_watch_rule",
+    "pressure_rule",
+    "do_not_chase_rule",
+    "swap_condition",
+    "reason"
+  ],
+  "allowed_priority_classes": [
+    "focus_first",
+    "pressure_only",
+    "punish_late",
+    "avoid_chase"
+  ],
+  "composition_hooks": [
+    "owcPriorityTargetOrderLines",
+    "owcPriorityTargetPillTargets"
+  ],
+  "detail_hooks": [
+    "owcDetailPriorityTargets"
+  ]
+}

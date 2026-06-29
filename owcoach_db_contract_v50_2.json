@@ -1,0 +1,210 @@
+{
+  "schema_version": "owcoach_db_contract_v50_2",
+  "purpose": "Unify mixed OW Coach target DB field families through a stable normalized surface for diagnosis rendering and QA.",
+  "normalized_detail_surfaces": [
+    "gameplan",
+    "main",
+    "move",
+    "sustain",
+    "ultimate",
+    "highground",
+    "cue",
+    "practice",
+    "targets",
+    "forbidden",
+    "rank"
+  ],
+  "normalized_comp_surfaces": [
+    "matchup_rating",
+    "composition_tags",
+    "key_enemy_skills",
+    "diagnosis_snippets"
+  ],
+  "rank_keys": [
+    "bronze",
+    "silver",
+    "gold",
+    "platinum",
+    "diamond_plus"
+  ],
+  "detail_aliases": {
+    "main": [
+      "main",
+      "railgun_management",
+      "peacemaker_management",
+      "viper_management",
+      "hellfire_shotguns",
+      "photon_projector",
+      "storm_bow",
+      "rivet_gun",
+      "pulse_pistols",
+      "shuriken",
+      "recon_mode",
+      "assault_mode",
+      "blaster",
+      "machine_pistol"
+    ],
+    "move": [
+      "move",
+      "power_slide",
+      "combat_roll",
+      "coach_gun",
+      "shadow_step",
+      "teleporter",
+      "lunge_wall_climb",
+      "overload",
+      "blink",
+      "swift_strike",
+      "reconfigure",
+      "wall",
+      "translocator",
+      "cyber_agility"
+    ],
+    "sustain": [
+      "sustain",
+      "disruptor_shot",
+      "flashbang",
+      "dynamite",
+      "wraith_form",
+      "sentry_turret",
+      "sonic_arrow",
+      "deploy_turret",
+      "recall",
+      "deflect",
+      "grenade",
+      "cryo",
+      "virus",
+      "forge_hammer"
+    ],
+    "ultimate": [
+      "ultimate",
+      "overclock",
+      "deadeye",
+      "bob",
+      "death_blossom",
+      "photon_barrier",
+      "dragonstrike",
+      "molten_core",
+      "pulse_bomb",
+      "dragonblade",
+      "artillery",
+      "blizzard",
+      "emp"
+    ],
+    "rank": [
+      "rank",
+      "rank_tips",
+      "bronze/silver/gold/platinum/diamond_plus",
+      "rank_tips.*"
+    ]
+  },
+  "notes": [
+    "Existing CSV field names are not forcibly renamed in Pack B.",
+    "The runtime receives a normalized object so future DB packs can use either legacy or common field names.",
+    "Static QA fails when a 51-row target detail DB cannot expose the normalized surfaces."
+  ],
+  "target_summary": {
+    "Soldier76": {
+      "comp_db_count": 51,
+      "detail_db_count": 9,
+      "rank_advice_mode": "5tier_runtime_and_db",
+      "engine_name": "SoldierEngine"
+    },
+    "Sojourn": {
+      "comp_db_count": 51,
+      "detail_db_count": 51,
+      "rank_advice_mode": "5tier_runtime_and_db",
+      "engine_name": "SojournEngine"
+    },
+    "Cassidy": {
+      "comp_db_count": 51,
+      "detail_db_count": 51,
+      "rank_advice_mode": "5tier_runtime_and_db",
+      "engine_name": "CassidyEngine"
+    },
+    "Ashe": {
+      "comp_db_count": 51,
+      "detail_db_count": 51,
+      "rank_advice_mode": "five_tiers",
+      "engine_name": null
+    },
+    "Reaper": {
+      "comp_db_count": 51,
+      "detail_db_count": 51,
+      "rank_advice_mode": "five_tiers",
+      "engine_name": null
+    },
+    "Symmetra": {
+      "comp_db_count": 51,
+      "detail_db_count": 51,
+      "rank_advice_mode": "five_tiers",
+      "engine_name": null
+    },
+    "Hanzo": {
+      "comp_db_count": 51,
+      "detail_db_count": 51,
+      "rank_advice_mode": "five_tiers",
+      "engine_name": null
+    },
+    "Torbjorn": {
+      "comp_db_count": 51,
+      "detail_db_count": 51,
+      "rank_advice_mode": "5tiers",
+      "engine_name": null
+    },
+    "Tracer": {
+      "comp_db_count": 51,
+      "detail_db_count": 51,
+      "rank_advice_mode": "five_tiers",
+      "engine_name": null
+    },
+    "Genji": {
+      "comp_db_count": 51,
+      "detail_db_count": 51,
+      "rank_advice_mode": "five_tiers",
+      "engine_name": null
+    },
+    "Bastion": {
+      "comp_db_count": 51,
+      "detail_db_count": 51,
+      "rank_advice_mode": "five_tiers",
+      "engine_name": "BastionEngine"
+    },
+    "Mei": {
+      "comp_db_count": 51,
+      "detail_db_count": 51,
+      "rank_advice_mode": "five_tiers",
+      "engine_name": "MeiEngine"
+    },
+    "Sombra": {
+      "comp_db_count": 51,
+      "detail_db_count": 51,
+      "rank_advice_mode": "five_tiers",
+      "engine_name": "SombraEngine"
+    },
+    "Junkrat": {
+      "comp_db_count": 51,
+      "detail_db_count": 51,
+      "rank_advice_mode": "5tier_db_pack_a",
+      "engine_name": "JunkratEngine"
+    },
+    "Pharah": {
+      "comp_db_count": 51,
+      "detail_db_count": 51,
+      "rank_advice_mode": "5tier_db_pack_a",
+      "engine_name": "PharahEngine"
+    },
+    "Echo": {
+      "comp_db_count": 51,
+      "detail_db_count": 51,
+      "rank_advice_mode": "5tier_db_pack_a",
+      "engine_name": "EchoEngine"
+    },
+    "Emre": {
+      "comp_db_count": 51,
+      "detail_db_count": 51,
+      "rank_advice_mode": "5tier_db_pack_a",
+      "engine_name": "EmreEngine"
+    }
+  }
+}

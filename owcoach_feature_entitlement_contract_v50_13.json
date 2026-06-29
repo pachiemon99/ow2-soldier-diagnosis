@@ -1,0 +1,115 @@
+{
+  "version": "v50.13",
+  "pack": "Pack M: Free / Paid Entitlement Flags",
+  "purpose": "Add monetization metadata for free, preview, and paid feature boundaries without enforcing a hard paywall yet.",
+  "row_count": 867,
+  "targets": [
+    "Soldier76",
+    "Sojourn",
+    "Cassidy",
+    "Ashe",
+    "Reaper",
+    "Symmetra",
+    "Hanzo",
+    "Torbjorn",
+    "Bastion",
+    "Mei",
+    "Sombra",
+    "Tracer",
+    "Genji",
+    "Junkrat",
+    "Pharah",
+    "Echo",
+    "Emre"
+  ],
+  "enemy_count_per_target": 51,
+  "required_columns": [
+    "target_id",
+    "target_ja",
+    "enemy_id",
+    "enemy_ja",
+    "enemy_role",
+    "enemy_sub_role",
+    "composition_basic_tier",
+    "composition_category_summary_tier",
+    "detail_basic_plan_tier",
+    "matchup_category_tier",
+    "priority_target_summary_tier",
+    "matchup_reason_clarity_tier",
+    "diagnostic_uniqueness_tier",
+    "skill_wait_windows_tier",
+    "ultimate_decision_tier",
+    "rank_advice_quality_tier",
+    "free_preview_text",
+    "paid_unlock_text",
+    "monetization_note",
+    "entitlement_version"
+  ],
+  "allowed_tiers": [
+    "free",
+    "preview",
+    "paid"
+  ],
+  "feature_policy": {
+    "composition_basic": {
+      "tier": "free",
+      "label": "無料",
+      "description": "構成相性、構成タイプ、基本勝ち筋。"
+    },
+    "composition_category_summary": {
+      "tier": "preview",
+      "label": "無料プレビュー",
+      "description": "敵5人をカテゴリ単位で読む要約。"
+    },
+    "detail_basic_plan": {
+      "tier": "free",
+      "label": "無料",
+      "description": "対面方針と基本の立ち回り。"
+    },
+    "matchup_category": {
+      "tier": "preview",
+      "label": "無料プレビュー",
+      "description": "対面カテゴリと処理方針。"
+    },
+    "priority_target_summary": {
+      "tier": "preview",
+      "label": "無料プレビュー",
+      "description": "先に見る敵と深追い禁止の概要。"
+    },
+    "matchup_reason_clarity": {
+      "tier": "paid",
+      "label": "有料",
+      "description": "有利・不利理由、勝ち方、負け筋。"
+    },
+    "diagnostic_uniqueness": {
+      "tier": "paid",
+      "label": "有料",
+      "description": "対面ごとの固有焦点と見分け方。"
+    },
+    "skill_wait_windows": {
+      "tier": "paid",
+      "label": "有料",
+      "description": "敵スキル待ち、確定窓、1試合中のチェック。"
+    },
+    "ultimate_decision": {
+      "tier": "paid",
+      "label": "有料",
+      "description": "アルティメット使用条件、待つ敵スキル、悪いタイミング。"
+    },
+    "rank_advice_quality": {
+      "tier": "paid",
+      "label": "有料",
+      "description": "ブロンズからダイヤ以上までの5段階助言。"
+    }
+  },
+  "runtime_functions": [
+    "owcFeatureAccessTier",
+    "owcDetailAccess",
+    "owcDetailEntitlementHtml",
+    "owcCompositionAccessSummaryLines"
+  ],
+  "display_sections": [
+    "公開区分",
+    "構成診断の公開区分"
+  ]
+}

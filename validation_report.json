@@ -1,6 +1,6 @@
 {
-  "version": "50.0.0",
-  "display_version": "v50",
+  "version": "v50.20 Pack T",
+  "display_version": "v50.20 Pack T",
   "metadata_targets_17": true,
   "added_targets": [
     "Junkrat",
@@ -23,5 +23,222 @@
   "added_target_selectors_fix": true,
   "added_target_detail_tab_fix": true,
   "target_count": 17,
-  "static_server_module_export_fix": true
+  "static_server_module_export_fix": true,
+  "added_target_db_pack_a": {
+    "targets": [
+      "Junkrat",
+      "Pharah",
+      "Echo",
+      "Emre"
+    ],
+    "comp_rows_per_target": 51,
+    "detail_rows_per_target": 51,
+    "matchup_ratings": "recalibrated_not_all_5",
+    "key_enemy_skills": "placeholders_removed",
+    "rank_advice": "five_tiers_for_all_204_detail_rows",
+    "engine": "simple added-target engine now uses DB average rating for affinity"
+  },
+  "db_schema_contract": "added",
+  "checks_added": [
+    "owcoach-db-schema-contract-static.cjs"
+  ],
+  "notes_v50_2": "DB field-name variations are normalized through a shared adapter and guarded by static contract QA.",
+  "package": "owcoach_v50_20_handoff_readiness_pack_t",
+  "status": "static_checks_passed_browser_qa_not_run_github_reflection_on_hold",
+  "applied_at": "2026-06-29T00:00:00+09:00",
+  "summary": "Unified all 17 target heroes under canonical target metadata, engine registry, dynamic legacy aliases, CSV mirrors, and 51-row comp/detail DB expectations.",
+  "checks": [
+    "check:diagnosis-ux",
+    "check:syntax",
+    "check:wave-review-loop",
+    "node --check _combined.js",
+    "check:handoff-readiness"
+  ],
+  "changes": [
+    "Added five-enemy composition synthesis fields to owcEnhancedCompositionDiagnosis.",
+    "Preserved existing representative synergy labels for browser QA compatibility.",
+    "Added stop-order planning for dive/save, long-air, split-angle, rush, heavy-sustain, save-sustain, and balanced comps.",
+    "Updated target-specific synergy role lines to reference synthesized enemy groups."
+  ],
+  "description": "Adds target-priority classification rules for all 17 implemented target heroes and all 51 enemy heroes.",
+  "notes": [
+    "v50.5 Pack E composition text quality checks passed locally.",
+    "v50.6 Pack F ultimate decision DB checks passed locally.",
+    "v50.7 Pack G enemy skill wait-window checks passed locally.",
+    "v50.8 Pack H priority target decision checks passed locally."
+  ],
+  "ultimate_decision_db_pack_f": {
+    "targets": [
+      "Soldier76",
+      "Sojourn",
+      "Cassidy",
+      "Ashe",
+      "Reaper",
+      "Symmetra",
+      "Hanzo",
+      "Torbjorn",
+      "Bastion",
+      "Mei",
+      "Sombra",
+      "Tracer",
+      "Genji",
+      "Junkrat",
+      "Pharah",
+      "Echo",
+      "Emre"
+    ],
+    "target_count": 17,
+    "fields": [
+      "use_condition",
+      "wait_for",
+      "combo_with",
+      "bad_timing",
+      "target_priority",
+      "rank_tip"
+    ],
+    "composition_section": "d.ultimate now comes from owcUltimateDecisionLines",
+    "detail_section": "detail ultimate card now uses owcDetailUltimateDecisionText",
+    "csv_mirror": "owcoach_ultimate_decision_db_v50_6.csv"
+  },
+  "enemy_skill_wait_pack_g": {
+    "targets": [
+      "Soldier76",
+      "Sojourn",
+      "Cassidy",
+      "Ashe",
+      "Reaper",
+      "Symmetra",
+      "Hanzo",
+      "Torbjorn",
+      "Bastion",
+      "Mei",
+      "Sombra",
+      "Tracer",
+      "Genji",
+      "Junkrat",
+      "Pharah",
+      "Echo",
+      "Emre"
+    ],
+    "target_count": 17,
+    "enemy_count": 51,
+    "csv_rows": 867,
+    "csv_mirror": "owcoach_enemy_skill_wait_windows_v50_7.csv",
+    "composition_section": "d.peak now prepends owcSkillWaitCompositionLines",
+    "detail_section": "detail cue/practice now use owcDetailSkillWaitText"
+  },
+  "priority_target_pack_h": {
+    "targets": [
+      "Soldier76",
+      "Sojourn",
+      "Cassidy",
+      "Ashe",
+      "Reaper",
+      "Symmetra",
+      "Hanzo",
+      "Torbjorn",
+      "Bastion",
+      "Mei",
+      "Sombra",
+      "Tracer",
+      "Genji",
+      "Junkrat",
+      "Pharah",
+      "Echo",
+      "Emre"
+    ],
+    "target_count": 17,
+    "enemy_count": 51,
+    "csv_rows": 867,
+    "classes": [
+      "focus_first",
+      "pressure_only",
+      "punish_late",
+      "avoid_chase"
+    ],
+    "csv_mirror": "owcoach_priority_target_decision_db_v50_8.csv"
+  },
+  "pack": "Wave Review Loop",
+  "rank_advice_quality": {
+    "targets": 17,
+    "enemies_per_target": 51,
+    "rows": 867,
+    "tiers": [
+      "bronze",
+      "silver",
+      "gold",
+      "platinum",
+      "diamond_plus"
+    ],
+    "status": "static checks passed locally"
+  },
+  "browser_qa": "not_run_locally",
+  "feature_entitlement_pack_m": {
+    "rows": 867,
+    "targets": 17,
+    "enemy_rows_per_target": 51,
+    "tiers": [
+      "free",
+      "preview",
+      "paid"
+    ],
+    "hard_paywall_enforced": false,
+    "purpose": "monetization metadata for future auth/payment integration"
+  },
+  "english_parity_pack_n": {
+    "composition_sections": [
+      "Access Tier",
+      "Matchup Category Summary",
+      "Matchup Reasons",
+      "Target Order",
+      "Timing Windows",
+      "Ultimate Conditions",
+      "Priority Enemies"
+    ],
+    "detail_sections": [
+      "Access Tier",
+      "Matchup Category",
+      "Matchup Reason",
+      "Unique Matchup Focus",
+      "Skill Timing Window",
+      "Rank Advice",
+      "Priority Targets"
+    ],
+    "static_qa": "passed_local",
+    "browser_playwright": "pending_github_actions"
+  },
+  "validation_notes": {
+    "v50_14_english_parity": "English mode now renders Pack F-M sections: access tier, matchup categories, matchup reasons, uniqueness focus, skill timing windows, ultimate decision, rank advice, priority targets, and avoid lines. No hard paywall is enforced."
+  },
+  "package_version": "50.16.0",
+  "db_quality_rows": 867,
+  "db_quality_target_summary_rows": 17,
+  "quality_band_counts": {
+    "B": 509,
+    "needs_depth": 352,
+    "needs_text_cleanup": 171,
+    "C": 14,
+    "A": 344,
+    "stable": 344
+  },
+  "quality_remediation_rows": 867,
+  "quality_band_counts_after_pack_p": {
+    "A": 357,
+    "B": 510,
+    "C": 0,
+    "D": 0,
+    "E": 0
+  },
+  "depth_rows": 867,
+  "depth_audit_rows": 867,
+  "needs_depth_after_pack_q": 0,
+  "github_reflection": "on_hold",
+  "review_rows": 867,
+  "review_audit_rows": 867,
+  "non_stable_review_rows": 0,
+  "diagnosis_result_ux": "added",
+  "notes_v50_19": "Diagnosis output is now layered into top-three priorities, collapsible details, beginner summaries, and English parity summaries.",
+  "latest_local_zip": "owcoach_v50_20_handoff_readiness_pack_t.zip",
+  "handoff_set": "owcoach_v50_20_handoff_set.zip",
+  "notes_v50_20": "Adds handoff bundle, QA/GitHub reflection runbook, next-chat prompt, pack history, file manifest, and static handoff readiness QA. No strategy DB change."
 }

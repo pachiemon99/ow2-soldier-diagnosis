@@ -1,0 +1,32 @@
+{
+  "version": "v50.14 Pack N",
+  "name": "English Parity Audit",
+  "purpose": "Ensure English mode renders every major diagnostic section added from Pack F through Pack M and does not silently drop paid/free metadata, matchup categories, uniqueness hints, rank advice, or skill timing windows.",
+  "required_english_composition_sections": [
+    "Access Tier",
+    "Matchup Category Summary",
+    "Matchup Reasons",
+    "Target Order",
+    "Timing Windows",
+    "Ultimate Conditions",
+    "Priority Enemies"
+  ],
+  "required_english_detail_sections": [
+    "Access Tier",
+    "Matchup Category",
+    "Matchup Reason",
+    "Unique Matchup Focus",
+    "Skill Timing Window",
+    "Rank Advice",
+    "Priority Targets",
+    "Avoid"
+  ],
+  "forbidden_outputs": [
+    "undefined",
+    "null",
+    "NaN",
+    "該当なし"
+  ],
+  "no_hard_paywall": true,
+  "status": "static_qa_ready"
+}
