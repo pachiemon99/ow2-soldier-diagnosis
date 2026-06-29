@@ -1,0 +1,33 @@
+{
+  "version": "v50.9",
+  "pack": "Pack I - Rank Advice Quality",
+  "purpose": "Unifies rank advice for all implemented target heroes with a five-tier progression per target/enemy pair.",
+  "target_count": 17,
+  "enemy_count": 51,
+  "row_count": 867,
+  "required_fields": [
+    "target_id",
+    "enemy_id",
+    "enemy_pattern",
+    "learning_goal",
+    "bronze",
+    "silver",
+    "gold",
+    "platinum",
+    "diamond_plus"
+  ],
+  "rank_order": [
+    "bronze",
+    "silver",
+    "gold",
+    "platinum",
+    "diamond_plus"
+  ],
+  "rules": [
+    "All 17 implemented target heroes must have 51 rank-advice rows.",
+    "Each row must contain bronze, silver, gold, platinum, and diamond_plus advice.",
+    "Advice must be rank-specific, not a repeated fallback sentence.",
+    "Runtime detail rendering must prefer the v50.9 rank-advice DB before older row-level rank fields.",
+    "Existing row-level rank advice remains available as fallback through Pack B normalization."
+  ]
+}

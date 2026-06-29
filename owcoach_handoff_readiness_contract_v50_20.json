@@ -1,0 +1,22 @@
+{
+  "version": "v50.20",
+  "pack": "Pack T: Handoff Readiness",
+  "purpose": "Prepare OW Coach for safe chat handoff and later GitHub reflection.",
+  "latest_local_zip": "owcoach_v50_20_handoff_readiness_pack_t.zip",
+  "latest_handoff_zip": "owcoach_v50_20_handoff_set.zip",
+  "github_reflection": "on_hold",
+  "browser_qa_for_pack_a_to_t": "not_run",
+  "required_handoff_files": [
+    "handoff_bundle/00_READ_ME_FIRST.md",
+    "handoff_bundle/NEXT_CHAT_PROMPT.md",
+    "handoff_bundle/CURRENT_STATE_v50_20.md",
+    "handoff_bundle/PACK_HISTORY_A_TO_T.md",
+    "handoff_bundle/QA_AND_GITHUB_REFLECTION_RUNBOOK.md",
+    "handoff_bundle/NEXT_WORK_BACKLOG.md",
+    "handoff_bundle/GITHUB_STATUS_AND_HOLD.md",
+    "handoff_bundle/LATEST_FILES.md",
+    "handoff_bundle/file_manifest_v50_20.csv",
+    "handoff_bundle/file_manifest_v50_20.json"
+  ],
+  "static_check": "npm run check:handoff-readiness"
+}

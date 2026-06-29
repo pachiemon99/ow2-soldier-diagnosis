@@ -1,0 +1,12 @@
+surface,section,source_pack,status,note
+composition,Access Tier,Pack M,covered,free / preview / paid metadata visible in English
+composition,Matchup Category Summary,Pack L,covered,enemy five category summary visible in English
+composition,Matchup Reasons,Pack J,covered,reason lines visible in English
+composition,Target Order,Pack H,covered,new priority target order rendered in English
+composition,Timing Windows,Pack G,covered,skill wait lines rendered in English
+composition,Ultimate Conditions,Pack F,covered,ultimate decision lines rendered in English
+detail,Access Tier,Pack M,covered,per-matchup entitlement lines visible in English
+detail,Matchup Category,Pack L,covered,"category, reason, response, avoid visible in English"
+detail,Unique Matchup Focus,Pack K,covered,specific focus and cue visible in English
+detail,Rank Advice,Pack I,covered,five rank tiers visible in English
+detail,Skill Timing Window,Pack G,covered,per-enemy wait window visible in English

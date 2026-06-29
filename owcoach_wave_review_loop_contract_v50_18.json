@@ -1,0 +1,40 @@
+{
+  "version": "v50.18",
+  "pack": "Pack R: Wave Review Loop",
+  "row_count": 867,
+  "purpose": "Convert diagnosis into one-wave review, mistake signal, next adjustment, VOD marker, and micro drill for every target/enemy matchup.",
+  "required_columns": [
+    "target_id",
+    "enemy_id",
+    "review_pattern",
+    "wave_goal",
+    "review_question",
+    "success_signal",
+    "mistake_signal",
+    "next_adjustment",
+    "vod_marker",
+    "micro_drill"
+  ],
+  "min_text_lengths": {
+    "wave_goal": 30,
+    "review_question": 35,
+    "success_signal": 30,
+    "mistake_signal": 25,
+    "next_adjustment": 30,
+    "vod_marker": 35,
+    "micro_drill": 30
+  },
+  "runtime_helpers": [
+    "owcWaveReviewLoop",
+    "owcWaveReviewLines",
+    "owcWaveReviewHtml",
+    "owcCompositionWaveReviewLines",
+    "owcCompositionWaveReviewHtml"
+  ],
+  "display_surfaces": [
+    "detail diagnosis",
+    "composition diagnosis",
+    "English parity detail",
+    "English parity composition"
+  ]
+}

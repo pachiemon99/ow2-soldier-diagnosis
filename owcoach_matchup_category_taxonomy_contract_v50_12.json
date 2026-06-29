@@ -1,0 +1,66 @@
+{
+  "version": "v50.12",
+  "pack": "Pack L: Matchup Category Taxonomy",
+  "purpose": "Classify every implemented target/enemy matchup into readable tactical categories so diagnosis can be scanned faster.",
+  "row_count": 867,
+  "targets": [
+    "Soldier76",
+    "Sojourn",
+    "Cassidy",
+    "Ashe",
+    "Reaper",
+    "Symmetra",
+    "Hanzo",
+    "Torbjorn",
+    "Bastion",
+    "Mei",
+    "Sombra",
+    "Tracer",
+    "Genji",
+    "Junkrat",
+    "Pharah",
+    "Echo",
+    "Emre"
+  ],
+  "enemy_count_per_target": 51,
+  "required_columns": [
+    "target_id",
+    "target_ja",
+    "enemy_id",
+    "enemy_ja",
+    "enemy_role",
+    "enemy_sub_role",
+    "primary_category",
+    "secondary_category",
+    "ui_badge_label",
+    "category_description",
+    "category_reason",
+    "recommended_response",
+    "avoid_response",
+    "practice_focus",
+    "taxonomy_version"
+  ],
+  "allowed_primary_categories": [
+    "空中対策",
+    "空中圧の回避",
+    "フランカー対策",
+    "接近拒否",
+    "長射線管理",
+    "救助崩し",
+    "高耐久削り",
+    "盾割り・正面資源",
+    "範囲・設置物処理",
+    "撃ち合いテンポ",
+    "瀕死回収",
+    "正面破壊"
+  ],
+  "runtime_functions": [
+    "owcMatchupCategory",
+    "owcDetailMatchupCategoryHtml",
+    "owcCompositionCategorySummaryLines"
+  ],
+  "display_sections": [
+    "対面カテゴリ",
+    "対面カテゴリ要約"
+  ]
+}

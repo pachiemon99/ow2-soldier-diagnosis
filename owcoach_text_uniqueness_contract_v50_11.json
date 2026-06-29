@@ -1,0 +1,52 @@
+{
+  "version": "v50.11",
+  "pack": "Pack K: Diagnostic Text Uniqueness",
+  "purpose": "Reduce repeated diagnostic wording by adding target/enemy-specific focus hints and runtime duplicate filtering.",
+  "row_count": 867,
+  "targets": [
+    "Soldier76",
+    "Sojourn",
+    "Cassidy",
+    "Ashe",
+    "Reaper",
+    "Symmetra",
+    "Hanzo",
+    "Torbjorn",
+    "Bastion",
+    "Mei",
+    "Sombra",
+    "Tracer",
+    "Genji",
+    "Junkrat",
+    "Pharah",
+    "Echo",
+    "Emre"
+  ],
+  "enemy_count_per_target": 51,
+  "required_columns": [
+    "target_id",
+    "target_ja",
+    "enemy_id",
+    "enemy_ja",
+    "enemy_role",
+    "enemy_sub_role",
+    "enemy_archetype",
+    "specific_focus",
+    "unique_cue",
+    "avoid_repeat_note",
+    "composition_summary_token"
+  ],
+  "runtime_functions": [
+    "owcTextUniquenessHint",
+    "owcTextFingerprint",
+    "owcUniqueTextLines",
+    "owcApplyDiagnosticTextUniqueness",
+    "owcDiagnosticUniquenessHtml"
+  ],
+  "policy": {
+    "exact_duplicate_visible_lines": "remove within rendered detail arrays",
+    "matchup_reason": "append enemy-specific cue to win/loss conditions",
+    "rank_learning_goal": "append enemy-specific focus when Pack I rank advice is used",
+    "composition_matchup_reason": "append visible cue per selected enemy"
+  }
+}

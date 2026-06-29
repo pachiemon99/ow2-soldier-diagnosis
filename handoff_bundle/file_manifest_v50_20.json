@@ -1,0 +1,812 @@
+{
+  "version": "v50.20 Pack T",
+  "generated_at": "2026-06-29T11:00:00+09:00",
+  "file_count": 161,
+  "files": [
+    {
+      "path": ".github/workflows/playwright.yml",
+      "size_bytes": 1627,
+      "sha256": "b8e28915d599e5f684338aa9ff84e966c9604c42720fd5c4cedae8ffaafe31d1"
+    },
+    {
+      "path": ".npmrc",
+      "size_bytes": 56,
+      "sha256": "f42d16937f6eb917980e2a70a32397242da9192fc6a4dd3f115dc717d2673a21"
+    },
+    {
+      "path": "COMPOSITION_SYNTHESIS_CONTRACT_v50_4.md",
+      "size_bytes": 1361,
+      "sha256": "f025a54ec2a8e1f45cfb85feccca69907b4db8b5d90be38eed3c68f7d52fe883"
+    },
+    {
+      "path": "COMPOSITION_TEXT_QUALITY_CONTRACT_v50_5.md",
+      "size_bytes": 1148,
+      "sha256": "94bd2a033ba1c8c873e0551efa7edda5f3b234722cdad0f4531a43c2a6ca985f"
+    },
+    {
+      "path": "DB_QUALITY_SCORE_CONTRACT_v50_15.md",
+      "size_bytes": 850,
+      "sha256": "034fbc0029c5295c7660161f9652584abac4ea87b54785cbffe789a995991d61"
+    },
+    {
+      "path": "DEPTH_ENHANCEMENT_CONTRACT_v50_17.md",
+      "size_bytes": 796,
+      "sha256": "ce586ca1f3dd631efd63af5b6a0d6a2b97164164e4554cf0c8b5803753a1058c"
+    },
+    {
+      "path": "DIAGNOSIS_RESULT_UX_CONTRACT_v50_19.md",
+      "size_bytes": 718,
+      "sha256": "6ed785fc6ba41ba81cc79abb997f77418d57a22d2481423adb9f6b1f65670223"
+    },
+    {
+      "path": "DIAGNOSTIC_TEXT_UNIQUENESS_CONTRACT_v50_11.md",
+      "size_bytes": 1002,
+      "sha256": "61a9638ea2c39e4b65bb472f970420d90ed4422443d88a60613e082776cf6cc1"
+    },
+    {
+      "path": "ENEMY_SKILL_WAIT_CONTRACT_v50_7.md",
+      "size_bytes": 1126,
+      "sha256": "567714b972a306aed1c39aa78ab0d4dc01eb49c6515af48118a64a3ef4069e2a"
+    },
+    {
+      "path": "ENGLISH_PARITY_CONTRACT_v50_14.md",
+      "size_bytes": 936,
+      "sha256": "3ff11a68b1bfde46c033f96880b759885016a631b491933cdb49d49dd292e631"
+    },
+    {
+      "path": "FEATURE_ENTITLEMENT_CONTRACT_v50_13.md",
+      "size_bytes": 975,
+      "sha256": "bb83639d18dc14d96f9b71f2a91dc42dfcb34696762dc1ed864c0798f660232e"
+    },
+    {
+      "path": "GITHUB_ACTIONS_NEXT.md",
+      "size_bytes": 1294,
+      "sha256": "67d0290b9c284b275c576b0f067f2faa5cf3d3d2c9607259fc93da74ea6b47dc"
+    },
+    {
+      "path": "MATCHUP_CATEGORY_TAXONOMY_CONTRACT_v50_12.md",
+      "size_bytes": 891,
+      "sha256": "75629d9e75d90ed2bf4aa4e618d4146f077736785243c5b2208b63c245c12b8c"
+    },
+    {
+      "path": "MATCHUP_REASON_CONTRACT_v50_10.md",
+      "size_bytes": 763,
+      "sha256": "4e0395f3dcfdec11f06bfcbf626af1054bce36faf29fe85834385b332776682b"
+    },
+    {
+      "path": "PRIORITY_TARGET_CONTRACT_v50_8.md",
+      "size_bytes": 1043,
+      "sha256": "48ac1fc52624667fe1722077569736c8f34cfd11f14d9e9351a756f33c244d1c"
+    },
+    {
+      "path": "QUALITY_REMEDIATION_CONTRACT_v50_16.md",
+      "size_bytes": 749,
+      "sha256": "6af9256ebee0b26e84f6ff7862ce52bbf92504404c55b8194342e4ba597e8bfc"
+    },
+    {
+      "path": "RANK_ADVICE_QUALITY_CONTRACT_v50_9.md",
+      "size_bytes": 802,
+      "sha256": "aa7a35fd1f5babb49e37b8fc7ad2909a61aaf80e173a7b87400c98ceb92b681e"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 4990,
+      "sha256": "d598248c72f9cf55f9d35095524bbb5f3ec7d007844839a99d4ab12bc6c12590"
+    },
+    {
+      "path": "README_PACK_J_MATCHUP_REASON_CLARITY.md",
+      "size_bytes": 732,
+      "sha256": "ca669cd55e213c01c9f80f866c0adc8b8d5430f4f923a0766cc769b44ec27453"
+    },
+    {
+      "path": "README_PACK_K_DIAGNOSTIC_TEXT_UNIQUENESS.md",
+      "size_bytes": 673,
+      "sha256": "b8ad002e89c144b4f35d6c8ea68ce8fdd46e9a5599949eeefd2dcc9127e8c1bb"
+    },
+    {
+      "path": "README_PACK_L_MATCHUP_CATEGORY_TAXONOMY.md",
+      "size_bytes": 708,
+      "sha256": "53cdde1896971d9a333611d64b7821e696805291783977880ee564456dd6191c"
+    },
+    {
+      "path": "README_PACK_M_FEATURE_ENTITLEMENTS.md",
+      "size_bytes": 933,
+      "sha256": "e334f8b5e22f3b24ad21cbf6e4060009f8b949f68944a1b54efc40d75fc0ea83"
+    },
+    {
+      "path": "README_PACK_N_ENGLISH_PARITY.md",
+      "size_bytes": 1060,
+      "sha256": "32ede40359e667a33d562fefd7c789add9eea207eadcd0da7b51282b71734e2f"
+    },
+    {
+      "path": "README_PACK_O_DB_QUALITY_SCORE.md",
+      "size_bytes": 1055,
+      "sha256": "a92c291a5d81add349ba730a5b57cee94252dc80a9c1993cef94198df33623e5"
+    },
+    {
+      "path": "README_PACK_P_QUALITY_REMEDIATION.md",
+      "size_bytes": 925,
+      "sha256": "c06202c2745a4c79dc22bde45c482ddf63dbc3b8e5487f01b4007ceb72cb2969"
+    },
+    {
+      "path": "README_PACK_Q_DEPTH_ENHANCEMENT.md",
+      "size_bytes": 728,
+      "sha256": "f2a60219f8cb07dd6f65fc1d384ffb8f4901cc659b12dbdeece95a229995ca45"
+    },
+    {
+      "path": "README_PACK_R_WAVE_REVIEW_LOOP.md",
+      "size_bytes": 606,
+      "sha256": "68d478187c3e3efefa03543a43f5f32a33f31ed536aee85a7d0ee659531a80b7"
+    },
+    {
+      "path": "README_PACK_S_DIAGNOSIS_RESULT_UX.md",
+      "size_bytes": 808,
+      "sha256": "56e774f00ab7f8f5e6b665b6f611767944f94e437e043edbfda143303b0d239a"
+    },
+    {
+      "path": "TARGET_UNIFICATION_AUDIT_v50_3.md",
+      "size_bytes": 3500,
+      "sha256": "73710fcfefd7062ce426becab8fce0c0b2176207ee39501b93b31019e5ef47b7"
+    },
+    {
+      "path": "ULTIMATE_DECISION_CONTRACT_v50_6.md",
+      "size_bytes": 908,
+      "sha256": "32c95116cf5d0e9829bee1c2f2b45e6ca6ecde3932b08162e4d778bfba848558"
+    },
+    {
+      "path": "WAVE_REVIEW_LOOP_CONTRACT_v50_18.md",
+      "size_bytes": 718,
+      "sha256": "59e4e07a6411fd6de67d73cbfa76e87afe40dfe3b97b4bc4eb0f12d7ec72294b"
+    },
+    {
+      "path": "_combined.js",
+      "size_bytes": 14911913,
+      "sha256": "7d5a2979f0715429819be0a6d389d66d1dcadc89c77befa635993fb9a0551061"
+    },
+    {
+      "path": "ashe_comp_diagnosis_db_v1.csv",
+      "size_bytes": 72140,
+      "sha256": "282121020a5e005e53dbdfd422910acd9ca664febae2496ec0b138466fd4e53b"
+    },
+    {
+      "path": "ashe_hero_db_v1_full_all_roles.csv",
+      "size_bytes": 343927,
+      "sha256": "ecbf8df8380152c349b80cb34def8b6a14683c44c2fc9f6dfd8af1f77489cf54"
+    },
+    {
+      "path": "bastion_comp_diagnosis_db_v1.csv",
+      "size_bytes": 22607,
+      "sha256": "7d7477b597cce12668312177771c45bbdc04706a91395ca125838fbfa47f8913"
+    },
+    {
+      "path": "bastion_hero_db_v1_full_all_roles.csv",
+      "size_bytes": 355291,
+      "sha256": "31b7b77d06bedff1cc6b8ac0085db57badf036cd8c7cfb3107d72c06782818d8"
+    },
+    {
+      "path": "cassidy_comp_diagnosis_db_v1.csv",
+      "size_bytes": 61099,
+      "sha256": "676a3d2ce03770ff70d48bd57270e276403570d6308a79e19063bc20bff7c2b8"
+    },
+    {
+      "path": "cassidy_hero_db_v1_full_all_roles.csv",
+      "size_bytes": 359908,
+      "sha256": "4e224dabc38f9dcdfd0f57928c0b8109d922d473d86057d3222b094349f83088"
+    },
+    {
+      "path": "echo_comp_diagnosis_db_v1.csv",
+      "size_bytes": 37853,
+      "sha256": "01614e6af66cfb0cd161e27d34f7224c0c7c816215be3898af9a90952d9c1179"
+    },
+    {
+      "path": "echo_hero_db_v1_full_all_roles.csv",
+      "size_bytes": 254150,
+      "sha256": "0d27f6ad75206827aa32b6bbfdbf51acd98e960f99d56cefcbfbc2b3b12b7dfa"
+    },
+    {
+      "path": "emre_comp_diagnosis_db_v1.csv",
+      "size_bytes": 36425,
+      "sha256": "3900ccf065da9c3abcec80e7fb57d950f8c658d177433afe8f25110a87bd8306"
+    },
+    {
+      "path": "emre_hero_db_v1_full_all_roles.csv",
+      "size_bytes": 252371,
+      "sha256": "fdb2c880b37ce83d35dd9858cc1a8e153de10fd5da22a0c10fa74974fb94d6a4"
+    },
+    {
+      "path": "genji_comp_diagnosis_db_v1.csv",
+      "size_bytes": 62163,
+      "sha256": "f921657bd1d0c2b4059033ec1fa13f8a219bd9937322b484d70077c64cda5687"
+    },
+    {
+      "path": "genji_hero_db_v1_full_all_roles.csv",
+      "size_bytes": 393959,
+      "sha256": "621ee386dc9cace4232ad8b4fd0486ad40f79a59b4411838e75b7c74144b9746"
+    },
+    {
+      "path": "handoff_bundle/00_READ_ME_FIRST.md",
+      "size_bytes": 973,
+      "sha256": "831eb2c6537e15dc5d5643c9ccea84b6b8608e27e83d812a113557d6eef199bf"
+    },
+    {
+      "path": "handoff_bundle/CURRENT_STATE_v50_20.md",
+      "size_bytes": 878,
+      "sha256": "2a4e7397995b581f0c568022b7026012c7d0f1a7ea18bcba38f1f18cf066a14e"
+    },
+    {
+      "path": "handoff_bundle/GITHUB_STATUS_AND_HOLD.md",
+      "size_bytes": 438,
+      "sha256": "3fc23c0010599d0baaf7f74fca3ac8bada07574d515122d937dbdf018dafabc2"
+    },
+    {
+      "path": "handoff_bundle/LATEST_FILES.md",
+      "size_bytes": 724,
+      "sha256": "0eba197d891dd30d39663703b6505493597eee4a4c38c6ed855384ade9145881"
+    },
+    {
+      "path": "handoff_bundle/NEXT_CHAT_PROMPT.md",
+      "size_bytes": 2313,
+      "sha256": "e2f5f06f2e4eec4fe39652d41e239aef92de2900e4a879da8cea47a2039eea23"
+    },
+    {
+      "path": "handoff_bundle/NEXT_WORK_BACKLOG.md",
+      "size_bytes": 899,
+      "sha256": "8376b29d08e785270a4c15abb88773dbf99e5740084a258c8e683e0ac3b1adac"
+    },
+    {
+      "path": "handoff_bundle/PACK_HISTORY_A_TO_T.md",
+      "size_bytes": 2571,
+      "sha256": "bb78f2ae18e148b85a26fd7985ca19a5167a98992a639ce4b045e16353c961aa"
+    },
+    {
+      "path": "handoff_bundle/QA_AND_GITHUB_REFLECTION_RUNBOOK.md",
+      "size_bytes": 1262,
+      "sha256": "7e26674921f387531df0f8664b61affaf2aa14ebb3e628dc656a9fed74196a9d"
+    },
+    {
+      "path": "hanzo_comp_diagnosis_db_v1.csv",
+      "size_bytes": 43710,
+      "sha256": "e8aefa36a7285f650a26f75e57575d9b62283600e93ea2c6d6f30c129ff5a104"
+    },
+    {
+      "path": "hanzo_hero_db_v1_full_all_roles.csv",
+      "size_bytes": 348022,
+      "sha256": "0c5bd930cb419b9da897a19d89a4d29e588b2a3e3d657603dfdc264770f7152c"
+    },
+    {
+      "path": "index.html",
+      "size_bytes": 14936256,
+      "sha256": "e5d6504b491daa95d151ad8704a0dea1a0bdcd582c6b622da43f8d798fce40d2"
+    },
+    {
+      "path": "junkrat_comp_diagnosis_db_v1.csv",
+      "size_bytes": 38771,
+      "sha256": "a27bdeddd5be36fca2344daa67753677b9fa40e3af84e73e3e01e5c73875cf74"
+    },
+    {
+      "path": "junkrat_hero_db_v1_full_all_roles.csv",
+      "size_bytes": 260915,
+      "sha256": "593e078684f96f222e7fa6c8885bcc3432e60adbdff63401364ee29066d34fde"
+    },
+    {
+      "path": "mei_comp_diagnosis_db_v1.csv",
+      "size_bytes": 22710,
+      "sha256": "af61b112296d6ae6c96a24292efad4473a2eecd6d15477332c52362408f8039d"
+    },
+    {
+      "path": "mei_hero_db_v1_full_all_roles.csv",
+      "size_bytes": 337662,
+      "sha256": "4208d46309c20bdc9683814a077a0fc855d1f0cf2bad3eed888d4d6303b240c5"
+    },
+    {
+      "path": "notices.html",
+      "size_bytes": 22457,
+      "sha256": "94349a4569d13123215337d4bcb1f7a59a3f696beab22238c02733ee1f360906"
+    },
+    {
+      "path": "owcoach_composition_synthesis_contract_v50_4.json",
+      "size_bytes": 675,
+      "sha256": "22049660577dd173f6058d2d1ef051c1ec8acf415b55f244e681e3615814efcd"
+    },
+    {
+      "path": "owcoach_composition_text_quality_contract_v50_5.json",
+      "size_bytes": 768,
+      "sha256": "3c385bb0ced8cdf55e19920c8e3ef7538a166586f1b5166ec7b4703505ffb435"
+    },
+    {
+      "path": "owcoach_db_contract_v50_2.json",
+      "size_bytes": 4876,
+      "sha256": "216e9951fe3ec284980892dc41c9fe42de8bde52be5065c2554e716eca1b1313"
+    },
+    {
+      "path": "owcoach_db_quality_score_audit_v50_15.csv",
+      "size_bytes": 376100,
+      "sha256": "496eca20cfe375d94e0f57550803bbe133c0c9502d842cb08bba78453f759260"
+    },
+    {
+      "path": "owcoach_db_quality_score_audit_v50_16.csv",
+      "size_bytes": 357099,
+      "sha256": "426d8a476eb78df8b6d635af6bf6458b3a8c1fc9b7a6b51e4807b94a79ae332c"
+    },
+    {
+      "path": "owcoach_db_quality_score_audit_v50_17.csv",
+      "size_bytes": 254758,
+      "sha256": "19ae3b8e5e243e699535e27e06d3a3e1a7d3573e02b59b60479fbc85cb5e86e7"
+    },
+    {
+      "path": "owcoach_db_quality_score_contract_v50_15.json",
+      "size_bytes": 2823,
+      "sha256": "a3aafd3744a6434b9502d5d80f6a12bef9f05ffb4acc469964fa16deb14c045a"
+    },
+    {
+      "path": "owcoach_db_quality_target_summary_v50_15.csv",
+      "size_bytes": 1310,
+      "sha256": "5207a576fd59cb0cc9339fd5059f1978975591d1d0662f2b6e4a3c41c79f4e6c"
+    },
+    {
+      "path": "owcoach_db_quality_target_summary_v50_16.csv",
+      "size_bytes": 1307,
+      "sha256": "a0a59a199d1b1132ca5261ebec5e9f8b7b03911e5e7f9e09db85f9f48c7aed4b"
+    },
+    {
+      "path": "owcoach_db_quality_target_summary_v50_17.csv",
+      "size_bytes": 812,
+      "sha256": "36c4b7e68bea56b8cce6e0ad32b378d9228678fff4b669b9e1c166a733bf80eb"
+    },
+    {
+      "path": "owcoach_depth_enhancement_contract_v50_17.json",
+      "size_bytes": 868,
+      "sha256": "b3890073d9d929c395f5125ae0172ee4925c2600f649fcc584189dacc25f197d"
+    },
+    {
+      "path": "owcoach_depth_enhancement_db_v50_17.csv",
+      "size_bytes": 1146141,
+      "sha256": "43d0077cfaa30e1714076555a29b4ab7aaf6b457a3f7ea2f2f79068b21b0409c"
+    },
+    {
+      "path": "owcoach_diagnosis_result_ux_contract_v50_19.json",
+      "size_bytes": 624,
+      "sha256": "27be3ea6eb32c82f13327dc4e90b692df935e86dcd1ce0c09bf45514c6674d82"
+    },
+    {
+      "path": "owcoach_diagnostic_text_uniqueness_hints_v50_11.csv",
+      "size_bytes": 881656,
+      "sha256": "00f7b7ce82713828984fa28bef98db078ff882e9d5509d98c450fe4c99625802"
+    },
+    {
+      "path": "owcoach_enemy_skill_wait_contract_v50_7.json",
+      "size_bytes": 880,
+      "sha256": "be3d1295291509f33459e43234d1a503bc29ac1490f5376a99e35c9876bde839"
+    },
+    {
+      "path": "owcoach_enemy_skill_wait_windows_v50_7.csv",
+      "size_bytes": 266735,
+      "sha256": "51d30647ff511d588fcfb5d4d6e03c47c5bb87284ae1331208fb74d8367d81ee"
+    },
+    {
+      "path": "owcoach_english_parity_audit_v50_14.csv",
+      "size_bytes": 985,
+      "sha256": "2cb05dc4dfed0dee78856f9cddccf4a7e14cb63ae00834a234d7d0e05252ccf2"
+    },
+    {
+      "path": "owcoach_english_parity_contract_v50_14.json",
+      "size_bytes": 881,
+      "sha256": "ace7d69da948417205681945cebab0b56c7d3a4aeee961637624923121bbf29a"
+    },
+    {
+      "path": "owcoach_feature_entitlement_contract_v50_13.json",
+      "size_bytes": 3043,
+      "sha256": "533e2ad84c7bccca692f619daf4cfe2011263646ffa784baf5918fe75a26367f"
+    },
+    {
+      "path": "owcoach_feature_entitlement_db_v50_13.csv",
+      "size_bytes": 468848,
+      "sha256": "ee46d7f4cd0dbda6c797b143f519123ca9908f44df39a853592b183d763e6643"
+    },
+    {
+      "path": "owcoach_matchup_category_taxonomy_contract_v50_12.json",
+      "size_bytes": 1420,
+      "sha256": "6343a8cea56d51f0f837cd09f8f59cd2d2b10d8aeb3c7b36311b78e416f18f5d"
+    },
+    {
+      "path": "owcoach_matchup_category_taxonomy_db_v50_12.csv",
+      "size_bytes": 523975,
+      "sha256": "66a5ec909a2564ad2467b2cf0f56a1be4a8df29f7b6dcc263936c52aecad1211"
+    },
+    {
+      "path": "owcoach_matchup_reason_contract_v50_10.json",
+      "size_bytes": 1162,
+      "sha256": "06821fd53d63981f38a504ef3b5acac9081da7311db1777b4415a729f839e9a3"
+    },
+    {
+      "path": "owcoach_matchup_reason_db_v50_10.csv",
+      "size_bytes": 759987,
+      "sha256": "904efc360bdcecffed424da1363bba290bd041527de32d0ed8a29f771795da75"
+    },
+    {
+      "path": "owcoach_priority_target_contract_v50_8.json",
+      "size_bytes": 1034,
+      "sha256": "cb543de5ec8b6ac0821eea5be97f9e44005ec655a1ac06b6feca5e843e444041"
+    },
+    {
+      "path": "owcoach_priority_target_decision_db_v50_8.csv",
+      "size_bytes": 381437,
+      "sha256": "e574e69966802085e3252ebc25a87b830b1f873902b08be4dd76298b17296ced"
+    },
+    {
+      "path": "owcoach_quality_remediation_contract_v50_16.json",
+      "size_bytes": 859,
+      "sha256": "884740b797879913cc7b5ed49d2bd99cae0273931a11db137866d88417e92012"
+    },
+    {
+      "path": "owcoach_rank_advice_quality_contract_v50_9.json",
+      "size_bytes": 976,
+      "sha256": "b9dc1bed0a2413efa4992054e53117827edad42109c69c715b1f7d7619ab8e36"
+    },
+    {
+      "path": "owcoach_rank_advice_quality_db_v50_9.csv",
+      "size_bytes": 779548,
+      "sha256": "031e265639565540964bc82cacfa8270337b2d1803817dee453123797159954e"
+    },
+    {
+      "path": "owcoach_target_unification_contract_v50_3.json",
+      "size_bytes": 1084,
+      "sha256": "87fd83844a549c38f775d1b79c5015892e3fecfb28c68057eede8ed3ea14b103"
+    },
+    {
+      "path": "owcoach_text_uniqueness_contract_v50_11.json",
+      "size_bytes": 1284,
+      "sha256": "5866badf5512c7b02533fa685cfc269382f14a9733a72508d304b76b3bc9f756"
+    },
+    {
+      "path": "owcoach_ultimate_decision_contract_v50_6.json",
+      "size_bytes": 943,
+      "sha256": "49b4386b7c2bdfe40272d4fb3e2cc57bd348968875453f65c2ff58a0e67a9ae8"
+    },
+    {
+      "path": "owcoach_ultimate_decision_db_v50_6.csv",
+      "size_bytes": 15292,
+      "sha256": "1d415f15099c222dc92ba67e127aa4bc1f651ca81db48efbf720cdcbbc157297"
+    },
+    {
+      "path": "owcoach_wave_review_loop_audit_v50_18.csv",
+      "size_bytes": 130500,
+      "sha256": "b7806ab690170022c2fa4b640ba873219394b949d647c0c389474774efe8eb23"
+    },
+    {
+      "path": "owcoach_wave_review_loop_contract_v50_18.json",
+      "size_bytes": 979,
+      "sha256": "137e3cadbd47961e121526865af1ed57fa1bf7bf5f40cf7f8be7369612d52c67"
+    },
+    {
+      "path": "owcoach_wave_review_loop_db_v50_18.csv",
+      "size_bytes": 1172407,
+      "sha256": "ba2f3597675d27345e9a14231885fe1ae3170f8604bca28ad028442fc7859b9b"
+    },
+    {
+      "path": "owcoach_wave_review_loop_target_summary_v50_18.csv",
+      "size_bytes": 1061,
+      "sha256": "20c18ef979b5e99518abcafd16587a87dcd3cbd02310aa52e1862d28c5d5f768"
+    },
+    {
+      "path": "package.json",
+      "size_bytes": 5086,
+      "sha256": "db1364f77a73526e1e3c0a6633f990d763f1153e1c9c005ed84b76ef7f0087cc"
+    },
+    {
+      "path": "pharah_comp_diagnosis_db_v1.csv",
+      "size_bytes": 37547,
+      "sha256": "ab1bc73b3d68827bf9a5225ca8f20443bb4340e75690ed3c1aaffbd402c94953"
+    },
+    {
+      "path": "pharah_hero_db_v1_full_all_roles.csv",
+      "size_bytes": 255002,
+      "sha256": "3b0654034abc14800c86b83b27f1470ef278650e4dab4c4d4c8490a81195a8d9"
+    },
+    {
+      "path": "playwright.config.js",
+      "size_bytes": 1105,
+      "sha256": "32507be7ea9bdd576ab608fdd4d03e4fdffb1183d755b131e203c6d9958f8b74"
+    },
+    {
+      "path": "privacy.html",
+      "size_bytes": 21912,
+      "sha256": "38c8a0fdfde8833da233621faab40fc50b07d549b478fff10746cdc2875326c6"
+    },
+    {
+      "path": "reaper_comp_diagnosis_db_v1.csv",
+      "size_bytes": 49050,
+      "sha256": "f286d1d593111a751c0f757f39979d1b4fddbd3b31c06b6a7a8937c83ac4e619"
+    },
+    {
+      "path": "reaper_hero_db_v1_full_all_roles.csv",
+      "size_bytes": 377296,
+      "sha256": "d2fd5b661ac647b00ac8c766476bcd41f45487dbe040e68271e22b048562ea7f"
+    },
+    {
+      "path": "robots.txt",
+      "size_bytes": 64,
+      "sha256": "4845d5e4799d71a5ea278efa6fe41e8d9982a3013419afe2f02f5979d6be6525"
+    },
+    {
+      "path": "sitemap.xml",
+      "size_bytes": 911,
+      "sha256": "a8c621f91d61a46b77e25175e4bf096b2fc6afea0f23e48e078ebb339814321e"
+    },
+    {
+      "path": "sojourn_comp_diagnosis_db_v1.csv",
+      "size_bytes": 13887,
+      "sha256": "26e1d00e27386c1a122eb2fb7fa9854f913c1e4fe94a8a80f22927ce21faebe1"
+    },
+    {
+      "path": "sojourn_hero_db_v1_full_all_roles.csv",
+      "size_bytes": 329260,
+      "sha256": "084574890f8b8a4fa8b8b1272d2b35880c05f924ea3d8a8d461d5f129e199721"
+    },
+    {
+      "path": "soldier76_comp_diagnosis_db_v1.csv",
+      "size_bytes": 16753,
+      "sha256": "33597abcca5559e9d5fc5aa3aaa0257b074d9ad6c61ac1bcfbf384d894f3d746"
+    },
+    {
+      "path": "soldier76_hero_db_v1_full_all_roles.csv",
+      "size_bytes": 288904,
+      "sha256": "a10979d49a4c2ec6e3a7b7e6064f67dc27ed5c8e6af960b4cf2d1ad55413e6d1"
+    },
+    {
+      "path": "sombra_comp_diagnosis_db_v1.csv",
+      "size_bytes": 23252,
+      "sha256": "97c67254257f323c276eea3d1e8a7a4093b93fa10e318a60179e1b342370344e"
+    },
+    {
+      "path": "sombra_hero_db_v1_full_all_roles.csv",
+      "size_bytes": 339706,
+      "sha256": "ce48d7939bfb10966e825219e7082b64b5235dad8a1cbe10e11883e942dc484e"
+    },
+    {
+      "path": "symmetra_comp_diagnosis_db_v1.csv",
+      "size_bytes": 51028,
+      "sha256": "d0350d363a68852ba040029fa4ff80bf488793083824923033f4a0bd7db86346"
+    },
+    {
+      "path": "symmetra_hero_db_v1_full_all_roles.csv",
+      "size_bytes": 358606,
+      "sha256": "fe758317ef790a2362c61f1217664cc90912bc5210c5576befc3e6f0d4fe63e2"
+    },
+    {
+      "path": "terms.html",
+      "size_bytes": 22544,
+      "sha256": "553547cced0a652ff53befd91db3dffc3f68a5e558fa1a15caa76985d497acec"
+    },
+    {
+      "path": "tests/owcoach-added-target-db-pack-a-static.cjs",
+      "size_bytes": 2294,
+      "sha256": "11c9505bff6a8d33626d222aec5e5c9ec418d55da44c3882c97b3a27b02c1a87"
+    },
+    {
+      "path": "tests/owcoach-added-target-detail-alignment.spec.js",
+      "size_bytes": 1440,
+      "sha256": "ce199653c536dde9f7a76e8d29f55e51d06757451b5babd3c46d60e16fe2fcee"
+    },
+    {
+      "path": "tests/owcoach-affinity-five-stage.spec.js",
+      "size_bytes": 6809,
+      "sha256": "2fdd085041ea0402bda296f64ad05bfce8e344b58b73b2c1a3abefcaff0678a9"
+    },
+    {
+      "path": "tests/owcoach-all-hero-detail.spec.js",
+      "size_bytes": 7576,
+      "sha256": "22949c180436aa0ae57d811093742f0c5e3ee1f4765d6c964284983343f13ca4"
+    },
+    {
+      "path": "tests/owcoach-all-target-diagnosis.spec.js",
+      "size_bytes": 4993,
+      "sha256": "604c8e5df63c34594e1a9b40d99239872efcba67a5e54f7b1b5b843b74a78889"
+    },
+    {
+      "path": "tests/owcoach-broken-output-regression.spec.js",
+      "size_bytes": 7519,
+      "sha256": "67faac0afd203c2ffec26580fefc3d7932980eb4d9a2d87f243cf7279d85ae17"
+    },
+    {
+      "path": "tests/owcoach-composition-synthesis-static.cjs",
+      "size_bytes": 1026,
+      "sha256": "e2489329da95797b624a0257a608e4f20b6988b4879ea9f9e9dec16571ad1eba"
+    },
+    {
+      "path": "tests/owcoach-composition-text-quality-static.cjs",
+      "size_bytes": 2064,
+      "sha256": "e1642c5e8307b02cd9617964d341e9b8ae3a82950652b48ef7bfee6ae0649328"
+    },
+    {
+      "path": "tests/owcoach-db-quality-score-static.cjs",
+      "size_bytes": 2559,
+      "sha256": "0e1c766e1e7802d888323ae4980eec8ff31c2d643794e600f0947193dffc73dd"
+    },
+    {
+      "path": "tests/owcoach-db-schema-contract-static.cjs",
+      "size_bytes": 5211,
+      "sha256": "0a6089f60eaf56be5490a7a9444cbe5be70a8c69e514fab09297c3c3a9ab540e"
+    },
+    {
+      "path": "tests/owcoach-depth-enhancement-static.cjs",
+      "size_bytes": 2721,
+      "sha256": "2cfe23eb47e67939008a7964a13a28ae75eaf2d8f165e8daa394a55850326538"
+    },
+    {
+      "path": "tests/owcoach-diagnosis-ux-static.cjs",
+      "size_bytes": 1527,
+      "sha256": "a34542b3b268b6d0dbdd73991ccf8587ea6fa8acd3019b7c41d4aab32b81507d"
+    },
+    {
+      "path": "tests/owcoach-diagnosis.spec.js",
+      "size_bytes": 5316,
+      "sha256": "fc51cdcf67772c46a3e3bde1c87a81bfbe286ab3ee70c22cb5283a91b506b1d7"
+    },
+    {
+      "path": "tests/owcoach-enemy-skill-wait-static.cjs",
+      "size_bytes": 2918,
+      "sha256": "29708b8f47a462d0f4dd79b4393ba82b80efd04a119cb5b791c5f67753c76726"
+    },
+    {
+      "path": "tests/owcoach-enemy-unique.spec.js",
+      "size_bytes": 7213,
+      "sha256": "058a6a2b4f9ccc9eb6010f7f135445a753e589b7f8b94c8b8d8c44971588fd07"
+    },
+    {
+      "path": "tests/owcoach-english-mobile-ui.spec.js",
+      "size_bytes": 6561,
+      "sha256": "93820361b85f5d79087b5ac1418e5aa02c9e8eaf8aa3ef174fefbbaaa9682639"
+    },
+    {
+      "path": "tests/owcoach-english-parity-static.cjs",
+      "size_bytes": 2161,
+      "sha256": "3a4ba7fb8fc45d435de11319cf0703fd055298cb9e8de138c825c50603859d77"
+    },
+    {
+      "path": "tests/owcoach-english-synergy-render.spec.js",
+      "size_bytes": 1396,
+      "sha256": "b225fa1f9c102c0e6e523a7d370d939090d2d1816a6ae614894e54ce7bbb1e28"
+    },
+    {
+      "path": "tests/owcoach-feature-entitlements-static.cjs",
+      "size_bytes": 4301,
+      "sha256": "ce4c242c8e0e964da1cf1213f2e2b961e50491d23c8e4751783469a41c317618"
+    },
+    {
+      "path": "tests/owcoach-language-endurance.spec.js",
+      "size_bytes": 7248,
+      "sha256": "b1e115c2cb3d17b1abddf2702f29b716dda77f88d68b42094ffe2ed9d218af68"
+    },
+    {
+      "path": "tests/owcoach-language.spec.js",
+      "size_bytes": 3936,
+      "sha256": "b18db1a437ab82c82b4725c20008aaddb1c62242ab7b3265157918d825303767"
+    },
+    {
+      "path": "tests/owcoach-localstorage-fallback.spec.js",
+      "size_bytes": 6758,
+      "sha256": "16909ba98b83fcb4172f1fffb0ab5e610013f57c6622712f62d6ac9f2172e2bb"
+    },
+    {
+      "path": "tests/owcoach-matchup-category-taxonomy-static.cjs",
+      "size_bytes": 4259,
+      "sha256": "0e64fdc1db0ceac03075b713b8cefa2ee6b4b07a79f4f7e484ef7b6b02f1ca54"
+    },
+    {
+      "path": "tests/owcoach-matchup-reason-static.cjs",
+      "size_bytes": 3165,
+      "sha256": "fcb33ac4787dfb88146c923d3d1c6f206fb1ae4a3f99a686ee5da5b0e7eddccd"
+    },
+    {
+      "path": "tests/owcoach-policy-language-ui.spec.js",
+      "size_bytes": 7931,
+      "sha256": "e2f4bf42be9a7b49eaa825a2c92d1c1b56c589f807d3280b9b0994eb17c1fe03"
+    },
+    {
+      "path": "tests/owcoach-priority-targets-static.cjs",
+      "size_bytes": 2940,
+      "sha256": "074bc40bc8db8c155e2f4da44f9c3288ac6352088172b1b97cdada0491a136ef"
+    },
+    {
+      "path": "tests/owcoach-quality-remediation-static.cjs",
+      "size_bytes": 2528,
+      "sha256": "969c8a7f7432678b521fa44627ad88d5f184ba1182df3a6032f90e30a580363c"
+    },
+    {
+      "path": "tests/owcoach-rank-advice-quality-static.cjs",
+      "size_bytes": 3259,
+      "sha256": "a0022f3deb4be766ce2695da0b2d9a2c5b2c4175f03ff612d71a2103810f4d0f"
+    },
+    {
+      "path": "tests/owcoach-seo-files.spec.js",
+      "size_bytes": 2551,
+      "sha256": "015c1ac02f1784ec5d2b4c18cc6d3ee2e8a656ef1e530b6441e160748f08b3a6"
+    },
+    {
+      "path": "tests/owcoach-synergy-browser-matrix.spec.js",
+      "size_bytes": 2318,
+      "sha256": "ec58f8826093993b19c1e66a10dc21870bb47140f8ff96bc9ccd6c3f617fd1e0"
+    },
+    {
+      "path": "tests/owcoach-synergy-cross-qa.spec.js",
+      "size_bytes": 1332,
+      "sha256": "5479745920f12e7b7f722a2c1d5a462c8d78dc396e10d007a3b09b9c935aa242"
+    },
+    {
+      "path": "tests/owcoach-synergy-priority.spec.js",
+      "size_bytes": 1669,
+      "sha256": "140e726aae1ddebf247183a51638886ade10c5f3365a26a1df23d5bba7636058"
+    },
+    {
+      "path": "tests/owcoach-target-synergy-role-lines.spec.js",
+      "size_bytes": 1390,
+      "sha256": "5f47f46963119af1661deb41f98ea7f3e8718adfed58d8cf81f9e174862fe10a"
+    },
+    {
+      "path": "tests/owcoach-target-unification-static.cjs",
+      "size_bytes": 3626,
+      "sha256": "c93390e19e14d734ef98a44e17d48c1e88547ca07523d761690d1eb54afaa6cd"
+    },
+    {
+      "path": "tests/owcoach-text-uniqueness-static.cjs",
+      "size_bytes": 3751,
+      "sha256": "957848a36b0f94d2a1ab82f3f1e6b3df2ecd676dabe7583cce2917c70d2eb0cc"
+    },
+    {
+      "path": "tests/owcoach-ultimate-decision-static.cjs",
+      "size_bytes": 2331,
+      "sha256": "9d2e1f720cd78c8be057fd69346d6de7e527c7e5ca3e75a4989678a2928819b0"
+    },
+    {
+      "path": "tests/owcoach-v4954-static-preflight.cjs",
+      "size_bytes": 1135,
+      "sha256": "ebb8e9e1e8e8cfc7baf845ca53a9a2b676b821a6c97ce77cb1336a3faf3e6ede"
+    },
+    {
+      "path": "tests/owcoach-visual-snapshots.spec.js",
+      "size_bytes": 8244,
+      "sha256": "f6dd938582f35ccdf36305c0f7e11b6f1b1300c3bbc54f4bfc835cdcc50fc8d3"
+    },
+    {
+      "path": "tests/owcoach-wave-review-loop-static.cjs",
+      "size_bytes": 2435,
+      "sha256": "dc763befe87fe73ac6cccace9d365fefc1fa5094bcc9d84bd0fe1f37bbadfb28"
+    },
+    {
+      "path": "tests/static-server.cjs",
+      "size_bytes": 2751,
+      "sha256": "740c03767f9c01ccff705ccb6c99ba73fa2f4e7030ed84bfa764c7f504a8ad17"
+    },
+    {
+      "path": "tokusho.html",
+      "size_bytes": 21488,
+      "sha256": "7d5cba03db0f7064eb95bbd605d9b88ae200ae911d4640e225bc881297e759ea"
+    },
+    {
+      "path": "torbjorn_comp_diagnosis_db_v1.csv",
+      "size_bytes": 41990,
+      "sha256": "b0873084dd050cd7d61e1ef540095d571b884aaf7c9440ad57a74b3b026f63fe"
+    },
+    {
+      "path": "torbjorn_hero_db_v1_full_all_roles.csv",
+      "size_bytes": 367087,
+      "sha256": "78626028241864a6152ad389a83f6d3c40b5f56306248caf0dc14e17be1417d3"
+    },
+    {
+      "path": "tracer_comp_diagnosis_db_v1.csv",
+      "size_bytes": 67035,
+      "sha256": "93516657881b947a0a2b7beb9050038b5d95a1a56d5c8d1ea08f03d566ae0e54"
+    },
+    {
+      "path": "tracer_hero_db_v1_full_all_roles.csv",
+      "size_bytes": 404372,
+      "sha256": "b424c0f8e045a4632f1fa2051f2b302a2a3a868ecf635dd8120298bcfd3066bc"
+    },
+    {
+      "path": "validation_report.json",
+      "size_bytes": 7166,
+      "sha256": "095afc1907d1bdf21c881d0d02f843033574af0bc5e0183f3e8d7cf4da85a37e"
+    }
+  ]
+}

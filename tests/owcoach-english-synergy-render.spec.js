@@ -3,7 +3,7 @@ const { startStaticServer } = require('./static-server.cjs');
 let server;
 test.beforeAll(async()=>{ server = await startStaticServer(); });
 test.afterAll(async()=>{ if(server) await server.close(); });
-async function open(page, lang='ja'){
+async function open(page, lang = 'ja'){
   await page.addInitScript((selectedLang) => {
     localStorage.setItem('owcoach_lang', selectedLang);
     localStorage.setItem('owcoach_lang_selected', '1');

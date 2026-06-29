@@ -1,0 +1,30 @@
+{
+  "schema": "owcoach_composition_synthesis_contract_v50_4",
+  "version": "50.4.0",
+  "main_labels": [
+    "ダイブ救助構成",
+    "長射線＋空中圧力構成",
+    "分断射線構成",
+    "ラッシュ継戦構成",
+    "高耐久継戦構成",
+    "救助継戦構成",
+    "バランス構成"
+  ],
+  "required_functions": [
+    "owcEnhancedCompositionDiagnosis",
+    "owcOrderPlanForLabel",
+    "owcSynergyStopOrderLine",
+    "owcSynergyFactorLines"
+  ],
+  "required_fields": [
+    "roles",
+    "evidence",
+    "score_map",
+    "order_plan",
+    "primary_group",
+    "second_group",
+    "pressure_axis",
+    "five_man_summary",
+    "stop_order_summary"
+  ]
+}

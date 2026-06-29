@@ -1,0 +1,52 @@
+{
+  "version": "v50.7.0",
+  "pack": "Pack G - Enemy Skill Wait Windows",
+  "targets": [
+    "Soldier76",
+    "Sojourn",
+    "Cassidy",
+    "Ashe",
+    "Reaper",
+    "Symmetra",
+    "Hanzo",
+    "Torbjorn",
+    "Bastion",
+    "Mei",
+    "Sombra",
+    "Tracer",
+    "Genji",
+    "Junkrat",
+    "Pharah",
+    "Echo",
+    "Emre"
+  ],
+  "enemy_count": 51,
+  "csv_rows_expected": 867,
+  "required_target_rule_fields": [
+    "ja",
+    "type",
+    "confirm",
+    "punish",
+    "reset"
+  ],
+  "required_csv_fields": [
+    "target_id",
+    "target_ja",
+    "enemy_id",
+    "enemy_ja",
+    "wait_category",
+    "check_skills",
+    "punish_window",
+    "target_action",
+    "reset_action"
+  ],
+  "forbidden_placeholder_terms": [
+    "主要アビリティ",
+    "主要スキル",
+    "移動後",
+    "防御後",
+    "救助後",
+    "移動・防御・救助後",
+    "該当なし"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "version": "v50.6.0",
+  "name": "Ultimate Decision DB Pack F",
+  "target_count": 17,
+  "targets": [
+    "Soldier76",
+    "Sojourn",
+    "Cassidy",
+    "Ashe",
+    "Reaper",
+    "Symmetra",
+    "Hanzo",
+    "Torbjorn",
+    "Bastion",
+    "Mei",
+    "Sombra",
+    "Tracer",
+    "Genji",
+    "Junkrat",
+    "Pharah",
+    "Echo",
+    "Emre"
+  ],
+  "required_fields": [
+    "ja",
+    "ultimate",
+    "use_condition",
+    "wait_for",
+    "combo_with",
+    "bad_timing",
+    "target_priority",
+    "rank_tip"
+  ],
+  "rank_tiers": [
+    "bronze",
+    "silver",
+    "gold",
+    "platinum",
+    "diamond_plus"
+  ],
+  "application": [
+    "composition diagnosis ultimate section",
+    "detail diagnosis ultimate card",
+    "English rendering through owcToEnglishText fallback"
+  ],
+  "rule": "Every implemented target hero must have explicit ultimate use condition, wait-for list, combo line, bad timing, target priority, and five-tier rank note."
+}
