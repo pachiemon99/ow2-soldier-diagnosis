@@ -1,0 +1,20 @@
+{
+  "phase": "macro_rebuild_phase4",
+  "package_version": "50.31.0",
+  "scope": "detail diagnosis macro-aware command surface",
+  "implemented": [
+    "detail pages now show the enemy function inside the current composition",
+    "target-specific safe seat, reset path, and job are surfaced above legacy detail text",
+    "enemy function tags cover engage, followup, sustain, pocket, anti-tank, setup, air, and poke roles",
+    "pair synergy hints are shown when the selected enemy composition contains a known enabler pair",
+    "legacy detail diagnosis remains below the new Phase 4 brief"
+  ],
+  "display_order": [
+    "構成内の役割",
+    "安全な席",
+    "先に止める線",
+    "待つスキル",
+    "成立役・シナジー確認"
+  ],
+  "runtime_model": "index_html_single_runtime_no_browser_csv_fetch"
+}

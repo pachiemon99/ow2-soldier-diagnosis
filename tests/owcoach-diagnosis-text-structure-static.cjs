@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { readAppSource } = require('./owcoach-app-source-utils.cjs');
 const root = path.resolve(__dirname, '..');
 const bundlePath = path.join(root, 'diagnosis_text', 'bundle.json');
 const bundle = JSON.parse(fs.readFileSync(bundlePath, 'utf8'));
@@ -46,7 +47,7 @@ for(const term of forbidden){
   if(term === '入り口') continue;
   if(visibleText.includes(term)) fail(`forbidden diagnosis text term found in visible diagnosis bundle: ${term}`);
 }
-const combined = fs.readFileSync(path.join(root, '_combined.js'), 'utf8');
-if(!combined.includes('OWC_DIAGNOSIS_TEXT_BUNDLE')) fail('embedded diagnosis text bundle is missing');
-if(!combined.includes("fetch('diagnosis_text/bundle.json'")) fail('external diagnosis_text bundle loader is missing');
+const appSource = readAppSource(root);
+if(!appSource.includes('OWC_DIAGNOSIS_TEXT_BUNDLE')) fail('embedded diagnosis text bundle is missing');
+if(!appSource.includes("fetch('diagnosis_text/bundle.json'")) fail('external diagnosis_text bundle loader is missing');
 console.log('Diagnosis text structure static checks passed');

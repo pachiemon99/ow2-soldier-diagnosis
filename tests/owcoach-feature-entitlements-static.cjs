@@ -1,35 +1,18 @@
 #!/usr/bin/env node
 const fs = require('fs');
 const path = require('path');
+const { readExpandedCsv } = require('./owcoach-csv-source-utils.cjs');
 const root = path.resolve(__dirname, '..');
 const index = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 const pkg = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8'));
-const csvPath = path.join(root, 'data/shared/owcoach_feature_entitlement_db_v50_13.csv');
+const csvRel = 'data/shared/owcoach_feature_entitlement_db_v50_13.csv';
+const csvPath = path.join(root, csvRel);
 const contractPath = path.join(root, 'data/contracts/owcoach_feature_entitlement_contract_v50_13.json');
 if (!fs.existsSync(csvPath)) throw new Error('missing feature entitlement CSV');
 if (!fs.existsSync(contractPath)) throw new Error('missing feature entitlement contract JSON');
 const contract = JSON.parse(fs.readFileSync(contractPath, 'utf8'));
 if (contract.version !== 'v50.13') throw new Error('contract version must be v50.13');
-function parseCsv(text){
-  const rows=[]; let row=[], cell='', q=false;
-  for(let i=0;i<text.length;i++){
-    const ch=text[i], next=text[i+1];
-    if(q){
-      if(ch==='"' && next==='"'){ cell+='"'; i++; }
-      else if(ch==='"'){ q=false; }
-      else cell+=ch;
-    } else {
-      if(ch==='"') q=true;
-      else if(ch===','){ row.push(cell); cell=''; }
-      else if(ch==='\n'){ row.push(cell); rows.push(row); row=[]; cell=''; }
-      else if(ch !== '\r') cell+=ch;
-    }
-  }
-  if(cell || row.length){ row.push(cell); rows.push(row); }
-  const header=rows.shift();
-  return rows.filter(r=>r.some(Boolean)).map(r=>Object.fromEntries(header.map((h,i)=>[h,r[i]||''])));
-}
-const rows = parseCsv(fs.readFileSync(csvPath, 'utf8'));
+const rows = readExpandedCsv(root, csvRel);
 if (rows.length !== 867) throw new Error(`expected 867 entitlement rows, got ${rows.length}`);
 const required = contract.required_columns || [];
 const allowed = new Set(contract.allowed_tiers || []);
@@ -37,12 +20,8 @@ const targetMap = new Map();
 const tierColumns = required.filter(x => x.endsWith('_tier'));
 const forbidden = /(TODO|TBD|undefined|null|NaN|該当なし)/;
 for (const row of rows) {
-  for (const col of required) {
-    if (!(row[col] || '').trim()) throw new Error(`empty ${col} for ${row.target_id}/${row.enemy_id}`);
-  }
-  for (const col of tierColumns) {
-    if (!allowed.has(row[col])) throw new Error(`invalid tier ${row[col]} in ${col} for ${row.target_id}/${row.enemy_id}`);
-  }
+  for (const col of required) if (!(row[col] || '').trim()) throw new Error(`empty ${col} for ${row.target_id}/${row.enemy_id}`);
+  for (const col of tierColumns) if (!allowed.has(row[col])) throw new Error(`invalid tier ${row[col]} in ${col} for ${row.target_id}/${row.enemy_id}`);
   if (row.composition_basic_tier !== 'free') throw new Error(`composition basic must stay free for ${row.target_id}/${row.enemy_id}`);
   if (row.detail_basic_plan_tier !== 'free') throw new Error(`detail basic plan must stay free for ${row.target_id}/${row.enemy_id}`);
   if (row.matchup_reason_clarity_tier !== 'paid') throw new Error(`matchup reasons must be paid value for ${row.target_id}/${row.enemy_id}`);
@@ -54,25 +33,9 @@ for (const row of rows) {
   targetMap.get(row.target_id).add(row.enemy_id);
 }
 if (targetMap.size !== 17) throw new Error(`expected 17 targets, got ${targetMap.size}`);
-for (const [target,set] of targetMap) {
-  if (set.size !== 51) throw new Error(`${target} must have 51 enemy entitlement rows, got ${set.size}`);
-}
-const mustContain = [
-  'OWC_FEATURE_ACCESS_POLICY',
-  'OWC_DETAIL_ACCESS_DB',
-  'owcFeatureAccessTier',
-  'owcDetailAccess',
-  'owcDetailEntitlementHtml',
-  'owcCompositionAccessSummaryLines',
-  'metadata_only',
-  '公開区分',
-  '構成診断の公開区分',
-  'd.accessSummary=typeof owcCompositionAccessSummaryLines',
-  'owcDetailEntitlementHtml(h,d,target())'
-];
-for (const needle of mustContain) {
-  if (!index.includes(needle)) throw new Error(`missing runtime marker: ${needle}`);
-}
+for (const [target,set] of targetMap) if (set.size !== 51) throw new Error(`${target} must have 51 enemy entitlement rows, got ${set.size}`);
+const mustContain = ['OWC_FEATURE_ACCESS_POLICY','OWC_DETAIL_ACCESS_DB','owcFeatureAccessTier','owcDetailAccess','owcDetailEntitlementHtml','owcCompositionAccessSummaryLines','metadata_only','公開区分','構成診断の公開区分','d.accessSummary=typeof owcCompositionAccessSummaryLines','owcDetailEntitlementHtml(h,d,target())'];
+for (const needle of mustContain) if (!index.includes(needle)) throw new Error(`missing runtime marker: ${needle}`);
 if (!pkg.scripts['check:feature-entitlements']) throw new Error('missing check:feature-entitlements script');
 if (!pkg.scripts['check:syntax'].includes('check:feature-entitlements')) throw new Error('check:syntax does not run Pack M check');
 console.log('Feature entitlement static checks passed');

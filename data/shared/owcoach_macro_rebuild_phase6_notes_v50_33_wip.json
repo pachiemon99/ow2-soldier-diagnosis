@@ -1,0 +1,23 @@
+{
+  "phase": "macro_rebuild_phase6",
+  "package_version": "50.33.0",
+  "purpose": "Add Browser QA coverage for Phase 5 trio core and five-man synthesis plus Phase 4 detail surface stability.",
+  "browser_qa_spec": "tests/owcoach-macro-rebuild-phase6-browser.spec.js",
+  "static_check": "tests/owcoach-macro-rebuild-phase6-static.cjs",
+  "browser_qa_cases": [
+    "Winston + Tracer + Ana dive trio core across quick, standard, and detail modes",
+    "Reinhardt + Mei + Lúcio rush split core",
+    "Sigma + Bastion + Baptiste bunker sustain core",
+    "Phase 4 detail surface remains visible after Phase 5 synthesis"
+  ],
+  "expected_surfaces": [
+    "完成コア検出 / 5人構成合成",
+    "敵5人の完成形",
+    "切るべき配線",
+    "主勝ち筋 / 副勝ち筋",
+    "構成内の役割",
+    "成立役・シナジー確認"
+  ],
+  "github_actions_target": "browser-qa",
+  "zip_policy": "Create a full ZIP only when requested or when a GitHub Desktop reflection package is useful."
+}

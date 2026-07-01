@@ -1,0 +1,9 @@
+{
+  "version": "v50.29-wip-phase1",
+  "purpose": "Macro composition and synergy lens based on playing research. Runtime logic is embedded in index.html for the current single-file app model.",
+  "archetype_count": 10,
+  "pair_synergy_count": 18,
+  "target_lens_count": 17,
+  "runtime_fetch_required": false,
+  "zip_generated": false
+}

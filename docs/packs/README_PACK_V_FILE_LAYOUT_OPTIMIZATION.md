@@ -9,7 +9,7 @@ Pack V reorganizes the repository so that generated data, contracts, audits, doc
 - Audit CSV files moved to `data/audits/`.
 - Contract JSON files moved to `data/contracts/`.
 - Pack and contract Markdown files moved to `docs/`.
-- Runtime files remain at the root: `index.html`, `_combined.js`, public policy pages, sitemap, robots, package files.
+- Runtime files remain at the root: `index.html`, public policy pages, sitemap, robots, package files. `_combined.js` is no longer committed because it duplicated the inline app source.
 - `diagnosis_text/` remains at the root so the app can keep loading `diagnosis_text/bundle.json` without a runtime path migration.
 - Static QA paths were updated.
 - Added `npm run check:file-layout`.

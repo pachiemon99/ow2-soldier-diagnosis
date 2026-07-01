@@ -1,0 +1,20 @@
+{
+  "phase": "macro_rebuild_phase3",
+  "package_version": "50.30.0",
+  "purpose": "Restructure the composition diagnosis result into a fight-ready command-order UI.",
+  "display_order": [
+    "enemy_win_condition",
+    "target_hero_seat",
+    "line_to_stop_first",
+    "target_order",
+    "skill_wait_and_peak_timing",
+    "ultimate_condition_and_forbidden_action"
+  ],
+  "new_runtime_hooks": [
+    "owcBuildPhase3CommandModel",
+    "owcRenderPhase3Composition"
+  ],
+  "runtime_fetch_changes": "none",
+  "zip_generated": false,
+  "github_reflected": false
+}

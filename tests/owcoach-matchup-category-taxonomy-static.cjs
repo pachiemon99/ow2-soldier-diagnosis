@@ -1,35 +1,18 @@
 #!/usr/bin/env node
 const fs = require('fs');
 const path = require('path');
+const { readExpandedCsv } = require('./owcoach-csv-source-utils.cjs');
 const root = path.resolve(__dirname, '..');
 const index = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 const pkg = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8'));
-const csvPath = path.join(root, 'data/shared/owcoach_matchup_category_taxonomy_db_v50_12.csv');
+const csvRel = 'data/shared/owcoach_matchup_category_taxonomy_db_v50_12.csv';
+const csvPath = path.join(root, csvRel);
 const contractPath = path.join(root, 'data/contracts/owcoach_matchup_category_taxonomy_contract_v50_12.json');
 if (!fs.existsSync(csvPath)) throw new Error('missing matchup category taxonomy CSV');
 if (!fs.existsSync(contractPath)) throw new Error('missing matchup category contract JSON');
 const contract = JSON.parse(fs.readFileSync(contractPath, 'utf8'));
 if (contract.version !== 'v50.12') throw new Error('contract version must be v50.12');
-function parseCsv(text){
-  const rows=[]; let row=[], cell='', q=false;
-  for(let i=0;i<text.length;i++){
-    const ch=text[i], next=text[i+1];
-    if(q){
-      if(ch==='"' && next==='"'){ cell+='"'; i++; }
-      else if(ch==='"'){ q=false; }
-      else cell+=ch;
-    } else {
-      if(ch==='"') q=true;
-      else if(ch===','){ row.push(cell); cell=''; }
-      else if(ch==='\n'){ row.push(cell); rows.push(row); row=[]; cell=''; }
-      else if(ch !== '\r') cell+=ch;
-    }
-  }
-  if(cell || row.length){ row.push(cell); rows.push(row); }
-  const header=rows.shift();
-  return rows.filter(r=>r.some(Boolean)).map(r=>Object.fromEntries(header.map((h,i)=>[h,r[i]||''])));
-}
-const rows = parseCsv(fs.readFileSync(csvPath, 'utf8'));
+const rows = readExpandedCsv(root, csvRel);
 const required = ['target_id','target_ja','enemy_id','enemy_ja','enemy_role','enemy_sub_role','primary_category','secondary_category','ui_badge_label','category_description','category_reason','recommended_response','avoid_response','practice_focus','taxonomy_version'];
 if (rows.length !== 867) throw new Error(`expected 867 category rows, got ${rows.length}`);
 const allowed = new Set(contract.allowed_primary_categories || []);
@@ -72,7 +55,6 @@ const mustContain = [
 for (const needle of mustContain) {
   if (!index.includes(needle)) throw new Error(`missing runtime marker: ${needle}`);
 }
-
 if (index.includes("map(x=>`${x.label}：${x.heroes.join('、')}。${x.responses[0]}`)")) {
   throw new Error('composition category summary must not reuse the first generic recommended_response');
 }

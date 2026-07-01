@@ -17,7 +17,7 @@ Make diagnosis result text easier to edit, improve, and add without touching lar
 
 ## Runtime rule
 
-The app tries to load `diagnosis_text/bundle.json` first. If it cannot load the external file, it falls back to the embedded bundle in `index.html` / `_combined.js`.
+The app tries to load `diagnosis_text/bundle.json` first. If it cannot load the external file, it falls back to the embedded bundle in `index.html`.
 
 ## Editing rule
 

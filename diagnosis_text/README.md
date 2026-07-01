@@ -4,7 +4,7 @@
 
 ## 目的
 
-巨大な `index.html` / `_combined.js` の中に文章を直接書き足すのではなく、診断文を JSON データとして分離します。
+巨大な `index.html` の中に文章を直接書き足すのではなく、診断文を JSON データとして分離します。
 
 ## 主に編集するファイル
 
@@ -31,6 +31,6 @@
 
 ## 反映の考え方
 
-アプリは `diagnosis_text/bundle.json` を読み込める場合はそれを優先します。読み込めない場合は、`index.html` / `_combined.js` 内の埋め込み版を使います。
+アプリは `diagnosis_text/bundle.json` を読み込める場合はそれを優先します。読み込めない場合は、`index.html` 内の埋め込み版を使います。
 
 編集後は `npm run check:diagnosis-text-structure` で構造と禁止表現を確認します。

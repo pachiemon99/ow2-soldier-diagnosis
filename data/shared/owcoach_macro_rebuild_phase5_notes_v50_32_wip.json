@@ -1,0 +1,32 @@
+{
+  "phase": "macro_rebuild_phase5",
+  "package_version": "50.32.0",
+  "purpose": "Detect trio cores and synthesize the selected enemy five into a primary completed composition shape.",
+  "runtime_surface": [
+    "owcBuildMacroCoreSynthesis",
+    "owcDetectTrioCores",
+    "owcRenderMacroCoreSynthesis"
+  ],
+  "display_order": [
+    "敵5人の完成形",
+    "完成コア",
+    "切るべき配線",
+    "主勝ち筋 / 副勝ち筋"
+  ],
+  "trio_core_examples": [
+    "Winston + Tracer + Ana",
+    "Reinhardt + Mei + Lúcio",
+    "Sigma + Bastion + Baptiste",
+    "Pharah + Mercy + D.Va",
+    "Genji + Ana + Kiriko",
+    "Brigitte + Ana + Zenyatta"
+  ],
+  "qa": [
+    "check:macro-rebuild-phase5",
+    "check:app-source",
+    "check:file-layout",
+    "check:composition-content-validity",
+    "check:composition-representative-polish"
+  ],
+  "notes": "Phase 5 keeps prior diagnosis intact and inserts a synthesis block into the composition result."
+}

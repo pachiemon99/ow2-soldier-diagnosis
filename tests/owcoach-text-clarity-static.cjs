@@ -22,7 +22,20 @@ const banned = [
   'キルを防ぎて',
   '入口',
   '入り口',
-  '禁止行動：'
+  '見分け方：',
+  '近距離へ入るフランカー',
+  '最高高度ではなく',
+  '通常射撃でレールガンを溜めるしてから',
+  '撃破候補を切り替える',
+  '小さな前進',
+  '割れ目',
+  '露出させる',
+  '禁止行動：',
+  '味方を助けた直後は本人より回復先',
+  'その敵自身より回復を受けた味方',
+  '本人ではなく回復先',
+  '遮蔽か高台を持っている',
+  'で撃破を確定すること'
 ];
 const files=[];
 function walk(dir){
@@ -39,6 +52,7 @@ for(const file of files){
   const rel = path.relative(root, file);
   if(rel === 'tests/owcoach-text-clarity-static.cjs') continue;
   if(rel === 'tests/owcoach-diagnosis-text-structure-static.cjs') continue;
+  if(rel === 'tests/owcoach-render-audit-utils.cjs') continue;
   if(rel === 'diagnosis_text/rewrite_rules.json') continue;
   let text = fs.readFileSync(file, 'utf8');
   if(rel === 'diagnosis_text/bundle.json'){
@@ -46,7 +60,7 @@ for(const file of files){
     delete data.rewrite_rules;
     text = JSON.stringify(data);
   }
-  if(rel === '_combined.js' || rel === 'index.html'){
+  if(rel === 'index.html'){
     text = text.replace(new RegExp('const OWC_DIAGNOSIS_TEXT_BUNDLE = Object\\.freeze\\(.*?\\);\\n','s'), '');
   }
   for(const term of banned){
@@ -55,11 +69,18 @@ for(const file of files){
 }
 must(hits.length === 0, `Text clarity banned phrases remain:\n${hits.slice(0,40).join('\n')}`);
 const index = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
-['_combined.js', 'index.html'].forEach(file => {
+{
+  const file = 'index.html';
   const text = fs.readFileSync(path.join(root, file), 'utf8');
   must(text.includes('owcCompactCompositionDisplay'), `${file} missing composition display compaction`);
   must(text.includes('owcCompactDetailDisplay'), `${file} missing detail display compaction`);
-});
+}
 must(index.includes('試合後の振り返り'), 'missing renamed review heading');
 must(index.includes('① 先に確認すること'), 'missing revised composition factor heading');
+must(index.includes('サイバー体術(壁登り)'), 'missing display annotation for Cyber Agility wall climb text');
+must(index.includes('owcUnsafePunishUseText'), 'missing safer forbidden skill-use wording helper');
+
+must(index.includes('owcLikelySavedTargets'), 'missing conditional saved-target priority helper');
+must(index.includes('owcSavePriorityBranchText'), 'missing saved-target priority branch text helper');
+must(index.includes('救助された敵が遮蔽へ戻れていなければ'), 'missing conditional rescued-target priority wording');
 console.log('Text clarity static checks passed');

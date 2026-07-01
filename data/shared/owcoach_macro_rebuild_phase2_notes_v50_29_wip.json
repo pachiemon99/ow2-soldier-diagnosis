@@ -1,0 +1,24 @@
+{
+  "version": "v50.29-wip-phase2",
+  "purpose": "Connect macro composition lens to diagnosis score bias, priority order, opening advice, peak timing, ultimate timing, and forbidden-action lines.",
+  "depends_on": "v50.29-wip-phase1",
+  "runtime_fetch_required": false,
+  "zip_generated": false,
+  "phase2_rule_count": 10,
+  "target_role_hint_count": 17,
+  "new_global_functions": [
+    "owcBuildMacroDecisionPlan"
+  ],
+  "patched_runtime_entries": [
+    "owcEnhancedCompositionDiagnosis",
+    "owcSynergyFactorLines",
+    "diagnose",
+    "owcRenderReadableComposition"
+  ],
+  "qa_focus": [
+    "app-source syntax",
+    "macro phase2 static tokens",
+    "core text polish",
+    "composition representative polish"
+  ]
+}

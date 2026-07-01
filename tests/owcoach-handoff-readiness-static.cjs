@@ -26,7 +26,7 @@ for (const file of required) {
 }
 
 const pkg = JSON.parse(read('package.json'));
-if (!['50.20.0','50.21.0','50.22.0','50.23.0'].includes(pkg.version)) fail(`package version mismatch: ${pkg.version}`);
+if (!['50.20.0','50.21.0','50.22.0','50.23.0','50.24.0','50.26.0','50.27.0','50.28.0'].includes(pkg.version)) fail(`package version mismatch: ${pkg.version}`);
 if (!pkg.scripts['check:handoff-readiness']) fail('missing check:handoff-readiness script');
 if (!pkg.scripts['check:syntax'].includes('check:handoff-readiness')) fail('check:syntax does not include handoff readiness');
 
